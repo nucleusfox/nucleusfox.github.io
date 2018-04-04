@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:700);
+
+.container {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.background {
+    filter: alpha(opacity=90);
+    /* IE */
+    -moz-opacity: 0.90;
+    /* Mozilla */
+    opacity: 0.90;
+    /* CSS3 */
+
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+
+    min-height: 100%;
+    min-width: 100%;
+
+    background-size: cover;
+}
+
+.shadow {
+    box-shadow: 0px 3px 7px 3px #191919;
+}
+
+.text {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.position_absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.content {
+    position: relative;
+    top: 0;
+    left: 0;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+body_, html_ {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+
+}
+
+.borderless {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Merriweather', serif;
+}
+
+.row {
+    min-height: 30px;
+}
+
+
+
+/* Elements */
+.form_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Elements alignments */
+.align_left {
+    float: left;
+    text-align: left;
+}
+
+.align_right {
+    float: right;
+    text-align: right;
+}
+
+.align_text_center {
+    text-align: center;
+}
+
+
+.column_25 {
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+
+.column_30 {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+.column_35 {
+    float: left;
+    width: 35%;
+    padding: 15px;
+}
+
+.column_50 {
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Text */
+h1 {
+    /*font-family: "Raleway", sans-serif*/
+    font-size: 4em;
+    color: ghostwhite;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
+    pointer-events: none;
+    font-weight: 300;
+    position: relative;
+    /*top: 30%;*/
+    left: 0;
+    right: 0;
+}
+
+p1 {
+    font-size: 2em;
+    color: ghostwhite;
+    font-family: 'Merriweather', serif;
+    pointer-events: none;
+    /*font-weight: 300;*/
+    position: relative;
+    /*top: 30%;*/
+    left: 0;
+    right: 0;
+}
+
+p_Montserrat {
+    font-size: 2em;
+    color: ghostwhite;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-weight: normal;
+    left: 0;
+    right: 0;
+}
+
+bottom_text {
+    font-size: 1em;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    /*font-weight: 300;*/
+    position: relative;
+    /*top: 30%;*/
+    left: 0;
+    right: 0;
+}

@@ -1,9 +1,81 @@
 <!DOCTYPE html>
+<!--
+    So, you found me! Hello and welcome!
+
+    I'm glad to know that you are interested with my little work here.
+
+    I'm not a front-end developer so you will definitely find below a lot of code used inefficiently. I just wanted to
+    make this page a little more neater and nicer and I'm happy to learn more if you have an advice.
+
+    Also I want to say thank you to Alex Wendland for the article (https://blog.alexwendland.com/2015/particle-network-js-animations/)
+    that helped me to set up the animated background without becoming an expert in JS. I really appreciate people who
+    share their results and let others learn on their experience - these are great people doing a great work.
+    So if you meet Alex, remember to say hello and thank you from me.
+-->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="stylesheet.css">
+
     <title>Hi! It's me!</title>
-    <h1>Hello and Welcome!</h1>
-    <p>This is me.</p>
 </head>
 <body>
+    <div class="row container shadow borderless position_relative">
+        <div class="borderless background" style="background:#001c33">
+            <canvas class="borderless content"></canvas>
+            <script src="script.js"></script>
+        </div>
+
+        <div class="position_absolute column_35 borderless" style="top: 25%;left: 10%">
+
+            <div class="content align_text_center">
+                <h1>Jane Ivanova</h1>
+                <p1>Integration geek</p1>
+                <br/><br/><br/><br/><br/>
+
+                <p_Montserrat>
+                    I am an integration architect, lead engineer and analyst who doesn't know that there is only 24 hours in a day if there is something to be integrated.
+                </p_Montserrat>
+
+
+                <br/><br/><br/><br/><br/>
+                <p_Montserrat style="font-size: medium;">Reach me out: &nbsp; <b>jane.ivanova.work@gmail.com</b></p_Montserrat>
+            </div>
+
+        </div>
+        <div class="position_absolute column_35 borderless" style="top: 25%;left: 55%">
+
+            <div class="content">
+                <p_Montserrat style="font-size: medium; text-align: left">
+                    <b>4+ years</b> of IT experience in full <b>Software Development Life Cycle (SDLC)</b>, Requirement Gathering, Design, Development, Testing and Implementation;
+                    <br/><br/>
+                    <b>3+ years</b> of integration engineering: web services development and configuration, cloud/on-demand/hybrid <b>integration platforms</b>, <b>SOA</b>, <b>microservices</b> and <b>APIs</b> architectures;
+                    <br/><br/>
+                    <b>2+ years</b> of experience in <b>Salesforce</b> bi-directional integration: SOAP/REST APIs, custom web services development. Apex development;
+                    <br/><br/>
+                    <b>2+ years</b> of leading <b>Informatica Cloud Data Integration</b> delivery experience.
+                    <br/><br/>
+                    <b>2+ years</b> of experience in <b>SAP XI/PI/PO</b> (architecture design, configuration, consulting and implementation, development & support). Java development;
+                    <br/><br/>
+                    <b>2 years</b> of experience in <b>SAP R/3 ABAP</b> development;
+                    <br/><br/>
+                    Experienced in leading international projects;
+                    <br/><br/>
+                    Experienced in working on <b>Agile</b> methodology. Experienced in working on <b>Large-Scrum</b> methodology as a lead of a Scrum-team;
+                </p_Montserrat>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row borderless position_relative">
+        <div class="column_25">
+            <bottom_text style="padding-left: 15px">Powered by <a href="https://github.com/nucleusfox" style="color: red; text-decoration: none">nucleusfox</a>'s brain.</bottom_text>
+        </div>
+    </div>
+</body>
