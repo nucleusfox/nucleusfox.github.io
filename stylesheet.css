@@ -1,10 +1,34 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:700);
 
 .container {
-    position: absolute;
     min-width: 100%;
     min-height: 100%;
 }
+
+.page {
+    height: 100vh;
+}
+
+.page_25 {
+    height: 25vh;
+}
+
+.page_30 {
+    height: 30vh;
+}
+
+.page_35 {
+    height: 35vh;
+}
+
+.page_75 {
+    height: 75vh;
+}
+
+.page_90 {
+    height: 90vh;
+}
+
 
 .background {
     filter: alpha(opacity=90);
@@ -24,8 +48,20 @@
     background-size: cover;
 }
 
+.image {
+    background: #ffffff;
+    max-height: 80%;
+    max-width: 80%;
+    padding: 0.5em;
+    border-radius: 2px;
+}
+
 .shadow {
     box-shadow: 0px 3px 7px 3px #191919;
+}
+
+.image_shadow {
+    box-shadow: 0px 0px 10px 2px #2a2a2a;
 }
 
 .text {
@@ -39,8 +75,6 @@
 
 .position_absolute {
     position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .position_relative {
@@ -68,23 +102,74 @@ body_, html_ {
     margin: 0;
 }
 
+.logo {
+    max-height: 10vh;
+    max-width: 10vm;
+    padding: 0.3rem;
+    margin: 0.6rem;
+    background: white;
+    border-radius: 2px;
+}
+
+
 html {
     font-family: 'Merriweather', serif;
 }
 
-.row {
-    min-height: 30px;
+br {
+    display: block;
+    margin: 10px 0;
+    line-height: 150%;
 }
 
+.row {
+    min-height: 10px;
+}
 
+hr.light {
+    height:1px;
+    border-width:0;
+    border-bottom: 1px dashed #bccbed;
+    color: #bccbed;
+    background-color: #fff1ea /*#001c33;*/
+}
+
+hr.dark {
+    height:1px;
+    border-width:0;
+    color: #26517b;
+    background-color: #26517b; /*#001c33;*/
+}
+
+.dashed_border {
+    border: 1px dashed #bccbed;
+    color: #bccbed;
+    margin: 0;
+}
 
 /* Elements */
-.form_center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.left_spec_desc {
+    left: 11%
+}
+
+.top_spec_desc {
+    top: 21%;
+}
+
+.right_spec_desc {
+    left: 55%;
+}
+
+.left_desc {
+    left: 7%
+}
+
+.top_desc {
+    top: 10%;
+}
+
+.right_desc {
+    left: 50%
 }
 
 /* Elements alignments */
@@ -102,6 +187,17 @@ html {
     text-align: center;
 }
 
+.padding_5 {
+    padding-left: 5%
+}
+
+.padding_10 {
+    padding-left: 10%
+}
+
+.padding_15 {
+    padding-left: 15%
+}
 
 .column_25 {
     float: left;
@@ -121,9 +217,33 @@ html {
     padding: 15px;
 }
 
+.column_40 {
+    float: left;
+    width: 40%;
+    padding: 15px;
+}
+
+.column_45 {
+    float: left;
+    width: 45%;
+    padding: 15px;
+}
+
 .column_50 {
     float: left;
     width: 50%;
+    padding: 15px;
+}
+
+.column_75 {
+    float: left;
+    width: 75%;
+    padding: 15px;
+}
+
+.column_90 {
+    float: left;
+    width: 90%;
     padding: 15px;
 }
 
@@ -133,10 +253,26 @@ html {
     clear: both;
 }
 
-/* Text */
+td {
+    vertical-align: top;
+}
+
+.td_left {
+    width: 50%;
+    text-align: right;
+    padding: 1em;
+}
+
+.td_right {
+    width: 50%;
+    text-align: left;
+    padding: 1em;
+}
+
+/*Text*/
 h1 {
     /*font-family: "Raleway", sans-serif*/
-    font-size: 4em;
+    font-size: 5em;
     color: ghostwhite;
     font-family: 'Merriweather', serif;
     letter-spacing: 2px;
@@ -146,6 +282,22 @@ h1 {
     /*top: 30%;*/
     left: 0;
     right: 0;
+    top : 0;
+}
+
+h2 {
+    /*font-family: "Raleway", sans-serif*/
+    font-size: 2em;
+    color: #002f5f;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
+    pointer-events: none;
+    font-weight: 300;
+    position: relative;
+    /*top: 30%;*/
+    left: 0;
+    right: 0;
+    top : 0;
 }
 
 p1 {
@@ -154,10 +306,39 @@ p1 {
     font-family: 'Merriweather', serif;
     pointer-events: none;
     /*font-weight: 300;*/
-    position: relative;
-    /*top: 30%;*/
-    left: 0;
-    right: 0;
+}
+
+p1_a {
+    font-size: 2em;
+    color: ghostwhite;
+    /*font-family: 'Merriweather', serif;*/
+    font-family: "Raleway", sans-serif;
+    pointer-events: none;
+    /*font-weight: 300;*/
+}
+
+p2 {
+    font-size: 1em;
+    color: #3f3f3f;
+    font-family: 'Merriweather', serif;
+    /*font-family: "Raleway", sans-serif;*/
+    /*pointer-events: none;*/
+    font-weight: lighter;
+    padding-left: 2em;
+}
+
+p2_a {
+    font-size: 1em;
+    color: #3f3f3f;
+    font-family: 'Merriweather', serif;
+    /*font-family: "Raleway", sans-serif;*/
+    /*pointer-events: none;*/
+    font-weight: lighter;
+}
+
+p3 {
+    color: ghostwhite;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 p_Montserrat {
@@ -170,6 +351,44 @@ p_Montserrat {
     right: 0;
 }
 
+p_Merriweather {
+    font-size: 2em;
+    font-family: 'Merriweather', sans-serif;
+    position: relative;
+    font-weight: normal;
+    left: 0;
+    right: 0;
+}
+
+h_1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 4em;
+    color: ghostwhite;
+    /*font-family: 'Merriweather', serif;*/
+    letter-spacing: 2px;
+    pointer-events: none;
+    font-weight: 300;
+    position: relative;
+    /*top: 30%;*/
+    left: 0;
+    right: 0;
+    top : 0;
+}
+
+p_Merriweather_1_5 {
+    font-size: 1.5em;
+    color: ghostwhite;
+    font-family: 'Merriweather', serif;
+    /*font-weight: 300;*/
+}
+
+p_Merriweather_2 {
+    font-size: 2em;
+    color: ghostwhite;
+    font-family: 'Merriweather', serif;
+    /*font-weight: 300;*/
+}
+
 bottom_text {
     font-size: 1em;
     color: black;
@@ -179,4 +398,151 @@ bottom_text {
     /*top: 30%;*/
     left: 0;
     right: 0;
+}
+
+highlighted_blue {
+    background-color: deepskyblue;
+}
+
+
+/*Animated elements*/
+#arrowAnim {
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    width: 2vw;
+    height: 2vw;
+    border: 0.2vw solid;
+    border-color: azure azure azure azure;
+    transform: rotate(45deg);
+}
+
+
+.arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 12s linear infinite;
+    animation: slide 12s linear infinite;
+}
+
+.delay1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.delay2 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.delay3 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateY(-3vw); }
+    20% { opacity:1; transform: translateY(-2.5vw); }
+    40% { opacity:0; transform: translateY(0.5vw); }
+    100% { opacity:0; transform: translateY(3vw); }
+}
+
+@keyframes slide {
+    0% { opacity:0; transform: translateY(-10vw); }
+    50% { opacity:0; transform: translateY(-6.2vw); }
+    55% { opacity:0.5; transform: translateY(-3.9vw); }
+    80% { opacity:0; transform: translateY(-1.7vw); }
+    100% { opacity:0; transform: translateY(5vw); }
+}
+
+@-webkit-keyframes appear {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes appear {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes appear {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes appear {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/*Decoration elements*/
+.sector_name { /*button*/
+    border-radius: 5px;
+    height: auto;
+    width: 8em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    padding: 0.3em;
+    border: 1px solid rgba(37, 89, 139, 0.93);
+    background: #285a82 linear-gradient(#285a82, #1f4b75);
+    /*box-shadow: 0 1px 2px rgba(0,0,0,.1);*/
+    box-shadow:
+            inset 0 1px 3px rgba(0, 58, 117, 0.5),
+            0 2px rgba(132, 150, 166, 0.90),
+            0 0 2px rgba(135, 153, 168, 0.90);
+}
+
+p_sector_name {
+    font-family: "Montserrat", sans-serif;
+    /*padding-top: 40%;*/
+    pointer-events: none;
+    vertical-align: middle;
+    text-shadow: -1px -1px #444;
+}
+
+.tab_bar {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.tab_bar_button {
+    /*font-family: "Raleway", sans-serif;*/
+    font-family: "Montserrat", sans-serif;
+    /*padding-top: 40%;*/
+    border-radius: 2px;
+    vertical-align: middle;
+    background: none;
+    height: auto;
+    width: 8em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(0, 47, 95, 0.8);
+    padding: 0.3em;
+    border: 2px solid transparent; /* rgba(0, 47, 95, 0.93);*/
+}
+
+.tab_bar_button_active {
+    border: 2px solid rgba(0, 47, 95, 0.93);
+}
+
+.tab_bar_button:hover {
+    background: rgba(63, 136, 206, 0.69);
+    color: white;
+    font-weight: bold;
+    border: 2px solid transparent; /*rgba(63, 136, 206, 0.69);*/
+}
+
+.tab_about {
+    -webkit-animation:  appear 1s;
+    -moz-animation:     appear 1s;
+    -o-animation:       appear 1s;
+    animation:          appear 1s;
 }
