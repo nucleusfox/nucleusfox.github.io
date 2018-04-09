@@ -21,6 +21,10 @@
     height: 35vh;
 }
 
+.page_40 {
+    height: 40vh;
+}
+
 .page_75 {
     height: 75vh;
 }
@@ -402,6 +406,10 @@ bottom_text {
 
 highlighted_blue {
     background-color: deepskyblue;
+}
+
+highlighted_green {
+    background-color: greenyellow;
 }
 
 
