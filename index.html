@@ -31,8 +31,8 @@
     <link rel="stylesheet" href="style_grid.css">
     <link rel="stylesheet" href="style_navigation.css">
     <link rel="stylesheet" href="style_decoration.css">
-    <link rel="shortcut icon" type="image/png" href="http://www.thebookclubproject.org/wp-content/uploads/2015/09/favicon-v21.gif"/>
-    <title>Hi! It's me!</title>
+    <link rel="shortcut icon" type="image/png" href="img/J%20shadowed%202.png"/>
+    <title>ane Ivanova</title>
     <script src="scripts/navigation.js"></script>
 </head>
 <body class="background">
@@ -93,53 +93,14 @@
 
     <!--About me tabs-->
     <div id="about_me_tabs" class="page row">
-        <div class="row position_relative top_desc" style="width: 100%">
+        <div class="row position_relative top_desc" style="width: 100%;">
             <div class="tab_bar">
-                <button class="tab_bar_button tab_bar_button_active" onclick="openAbout(event, 'about_me')">About me</button> &nbsp; &nbsp; &nbsp;
+                <button class="tab_bar_button tab_bar_button_active" onclick="openAbout(event, 'about_experience')">Experience</button> &nbsp; &nbsp; &nbsp;
                 <button class="tab_bar_button" onclick="openAbout(event, 'about_skills')">Skills</button> &nbsp; &nbsp; &nbsp;
-                <button class="tab_bar_button" onclick="openAbout(event, 'about_experience')">Experience</button> &nbsp; &nbsp; &nbsp;
                 <button class="tab_bar_button" onclick="openAbout(event, 'about_education')">Education</button> &nbsp; &nbsp; &nbsp;
+                <button class="tab_bar_button" onclick="openAbout(event, 'about_me')">About me</button> &nbsp; &nbsp; &nbsp;
                 <!--<button class="tab_bar_button">My projects</button> &nbsp; &nbsp; &nbsp;-->
-                <!--<div class="tab_bar_button"> <a style="text-decoration: none; margin: 0; height: 100%; width: 100%" href="#contacts">Contacts</a></div><!--onclick="moveToSection('contacts')"-->
             </div>
-
-            <!--Tab About me-->
-            <div id="about_me" class="tab_about">
-                <!--<div style="width: 100%">-->
-                <!--<div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%">-->
-                <div class="column_80 position_relative" style="margin-top: 7%; margin-left: 25%; margin-right: 25%">
-                    <p2>
-                        I was born and currently live in Moscow, Russian Federation. I graduated here from Physics and Mathematics Lyceum "Second School".
-                        The school instilled in me the love for the science, technologies and soccer. I always thought productive mind work requires healthy organism,
-                        so I used to play a lot with my classmates at school and after that with students at the
-                        <a href="https://mipt.ru/english/" style="text-decoration: none">Moscow Institute of Physics and Technology (MIPT)</a>.
-                        Actually soccer has become a key factor in the formation of my personality. It revealed a leader in me and taught a lot that I use nowadays
-                        in my job.
-                    </p2>
-                    <br/><br/>
-                    <p2>
-                        I used to play soccer in all of my free time. I have been a part of the university student team, the captain and a coach of the faculty team.
-                        I used to take part in <a href="http://matchveka.ru/">"Match Veka"</a>, our university tradition with long history to celebrate soccer annually in format
-                        of 24-hours match and other activities, and after I even have been attending training in the FC "Spartak Moscow".
-                        I was awarded a few times but today my form is far in a wardrobe.
-                    </p2>
-                    <br/><br/>
-                    <p2>
-                        I also graduated from musical school specializing in violin. Through beautiful music studies in orchestra made me
-                        literally feel the harmony and peace in coordination. Nowadays these feelings transformed into my joy
-                        building a harmony between different systems and functionality. In couple with soccer that makes me
-                        very team-oriented - I feel a great delight that working together shoulder to shoulder we can achieve incredible accomplishments.
-                        Nonetheless I'm comfortable to work solo as well.
-                    </p2>
-                </div>
-
-                <!--<div class="column_40 position_relative" style="margin-left: 5%; vertical-align: middle">-->
-                    <!--<p2>-->
-                    <!--</p2>-->
-                <!--</div>-->
-                <!--</div>-->
-            </div> <!--Tab About me-->
-
 
             <!--Tab About skills-->
             <div id="about_skills" class="tab_about" style="display: none">
@@ -183,7 +144,7 @@
             </div> <!--Tab About skills-->
 
             <!--Tab About experience-->
-            <div id="about_experience" class="tab_about" style="display: none">
+            <div id="about_experience" class="tab_about">
                 <div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%">
                     <p2 style="font-size: medium; text-align: left; padding-left: 0">
                         <b>4+ years</b> of IT experience in <highlighted_blue>full <b>Software Development Life Cycle (SDLC)</b></highlighted_blue>, Requirement Gathering, Design, Development, Testing and Implementation;
@@ -245,16 +206,20 @@
 
             <!--Tab About education-->
             <div id="about_education" class="tab_about" style="display: none;">
-                <div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%;">
-                    <p2>
-                        <title_3>
-                            <a href="https://mipt.ru/english/" style="text-decoration: none">Moscow Institute of Physics and Technology (MIPT)</a>
-                        </title_3>
-                    </p2><br/>
-                    <p2>
-                        Applied Physics and Mathematics, BS.
-                    </p2>
-                    <br/><br/> <br/>
+                <div class="column" style="text-align: center">
+                <p2>
+                    <title_2>
+                        <a href="https://mipt.ru/english/" style="text-decoration: none">Moscow Institute of Physics and Technology (MIPT)</a>
+                    </title_2>
+                </p2><br/>
+                <p2><title_3>
+                    Applied Physics and Mathematics, BS.
+                </title_3>
+                </p2>
+                </div>
+
+                <div class="column_40 " style="margin-left: 5%; margin-right: 5%;">
+                    <br/><br/><br/><br/>
                     <p2>
                         <title_3>Courses</title_3>
                         <ul>
@@ -269,7 +234,7 @@
                 </div>
 
                 <div class="column_40 position_relative" style="margin-left: 5%;">
-
+                    <br/><br/><br/><br/>
                     <p2>
                         <title_3>Certificates</title_3>
                         <ul>
@@ -283,6 +248,40 @@
                 </div>
 
             </div> <!--Tab About education-->
+
+            <!--Tab About me-->
+            <div id="about_me" class="tab_about" style="display: none">
+                <!--<div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%">-->
+                <div class="column_80 position_relative" style="margin-top: 7%; margin-left: 25%; margin-right: 25%">
+                    <p2>
+                        I was born and currently live in Moscow, Russian Federation. I graduated here from Physics and Mathematics Lyceum "Second School".
+                        The school instilled in me the love for the science, technologies and soccer. I always thought productive mind work requires healthy organism,
+                        so I used to play a lot with my classmates at school and after that with students at the
+                        <a href="https://mipt.ru/english/" style="text-decoration: none">Moscow Institute of Physics and Technology (MIPT)</a>.
+                        Actually soccer has become a key factor in the formation of my personality. It revealed a leader in me and taught a lot that I use nowadays
+                        in my job.
+                    </p2>
+                    <br/><br/>
+                    <p2>
+                        I used to play soccer in all of my free time. I have been a part of the university student team, the captain and a coach of the faculty team.
+                        I used to take part in <a href="http://matchveka.ru/">"Match Veka"</a>, our university tradition with long history to celebrate soccer annually in format
+                        of 24-hours match and other activities, and after I even have been attending training in the FC "Spartak Moscow".
+                        I was awarded a few times but today my form is far in a wardrobe.
+                    </p2>
+                    <br/><br/>
+                    <p2>
+                        I also graduated from musical school specializing in violin. Through beautiful music studies in orchestra made me
+                        literally feel the harmony and peace in coordination. Nowadays these feelings transformed into my joy
+                        building a harmony between different systems and functionality. In couple with soccer that makes me
+                        very team-oriented - I feel a great delight that working together shoulder to shoulder we can achieve incredible accomplishments.
+                        Nonetheless I'm comfortable to work solo as well.
+                    </p2>
+                </div>
+
+                <!--<div class="column_40 position_relative" style="margin-left: 5%; vertical-align: middle">-->
+                <!--</div>-->
+            </div> <!--Tab About me-->
+
         </div>
 
         <div class="row position_relative top_desc">
@@ -315,7 +314,6 @@
 
     <!--Contacts-->
     <div id="contacts" class="page_30 borderless row dashed_border" style="background-color: #dbd9ed; text-align: center" >
-        <!--<div class="row position_relative borderless" style="text-align: center">-->
             <div class="column_90 position_relative" style="margin-left: 5%; margin-right: 5%; padding: 0">
                 <h2>Contacts</h2>
                 <p2_a><b>Email:<b> &nbsp;jane.ivanova.work@gmail.com</p2_a> <br/>
@@ -330,7 +328,6 @@
                     Thank you!
                 </p2_a>
             </div>
-        <!--</div>-->
     </div>
 
 

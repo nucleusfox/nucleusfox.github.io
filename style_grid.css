@@ -195,6 +195,12 @@ body_, html_ {
     padding: 15px;
 }
 
+.column {
+    float: left;
+    width: 100%;
+    padding: 15px;
+}
+
 .row:after {
     content: "";
     display: table;
