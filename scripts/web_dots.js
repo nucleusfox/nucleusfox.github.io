@@ -1,9 +1,9 @@
 var canvas = document.querySelector("canvas");
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight * 1.1;
+canvas.height = window.innerHeight * 2;
 var width = canvas.width/3;
 var width_com = canvas.width*2/3;
-var height = canvas.height;
+var height = canvas.height/2;
 
 var ctx = canvas.getContext("2d");
 
@@ -35,22 +35,33 @@ function Ball (startX, startY, startVelX, startVelY, k, p) {
 }
 
 var balls_right = [];
-var k;
+var k, p;
 for (var i = 0; i < width * height / (65*65); i++) {
     k = 3/5;
-    balls_right.push(new Ball(Math.random() * width + width_com, Math.random() * height, 0, 0, k, 1));
+    p = 1;
+    balls_right.push(new Ball(Math.random() * width + width_com, Math.random() * height, 0, 0, k, p));
 }
 
 var balls_left_t = [];
 for (var i = 0; i < width * height / (65*65*4); i++) {
     k = -1;
-    balls_left_t.push(new Ball(Math.random() * width, Math.random() * height/3, 0, 0, k, 2/3));
+    p = 2/3;
+    balls_left_t.push(new Ball(Math.random() * width, Math.random() * height/3, 0, 0, k, p));
 }
 
 var balls_left_b = [];
-for (var i = 0; i < width * height / (65*65*32); i++) {
+for (var i = 0; i < width * height / (65*65*20); i++) {
     k = 1/5;
-    balls_left_b.push(new Ball(Math.random() * width/5, Math.random() * height/5 + height*4/5, 0, 0, k, -2));
+    p = -2;
+    balls_left_b.push(new Ball(Math.random() * width/5, Math.random() * height/5 + height*9/10 + 10, 0, 0, k, p));
+}
+
+
+var balls_right_b_b = [];
+for (var i = 0; i < width * height / (65*65*5); i++) {
+    k = -1;
+    p = 2/3;
+    balls_right_b_b.push(new Ball(Math.random() * width * 3 + 7 * width, Math.random() * height/5 + height*9/5, 0, 0, k, p));
 }
 
 function draw() {
@@ -64,9 +75,9 @@ function draw() {
         for (var index2 = balls_right.length - 1; index2 > index; index2 += -1) {
             var ball2 = balls_right[index2];
             var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
-            if (dist < 100) {
+            if (dist < 110) {
                 ctx.strokeStyle = "#448fda";
-                ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 150);
+                ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 700 * (Math.random()*100));//150);
                 ctx.lineWidth = "2px";
                 ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
                 ctx.lineTo((0.5 + ball2.x) | 0, (0.5 + ball2.y) | 0);
@@ -82,9 +93,9 @@ function draw() {
         for (var index2 = balls_left_t.length - 1; index2 > index; index2 += -1) {
             var ball2 = balls_left_t[index2];
             var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
-            if (dist < 100) {
+            if (dist < 120) {
                 ctx.strokeStyle = "#448fda";
-                ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 150);
+                ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 600 * (Math.random()*50));
                 ctx.lineWidth = "2px";
                 ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
                 ctx.lineTo((0.5 + ball2.x) | 0, (0.5 + ball2.y) | 0);
@@ -100,9 +111,27 @@ function draw() {
         for (var index2 = balls_left_b.length - 1; index2 > index; index2 += -1) {
             var ball2 = balls_left_b[index2];
             var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
-            if (dist < 100) {
+            if (dist < 120) {
                 ctx.strokeStyle = "#448fda";
-                ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 150);
+                ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 100 * (Math.random()*100));
+                ctx.lineWidth = "2px";
+                ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
+                ctx.lineTo((0.5 + ball2.x) | 0, (0.5 + ball2.y) | 0);
+            }
+        }
+        ctx.stroke();
+    }
+
+    for (var index = 0; index < balls_right_b_b.length; index++) {
+        var ball = balls_right_b_b[index];
+        ball.draw(ctx);
+        ctx.beginPath();
+        for (var index2 = balls_right_b_b.length - 1; index2 > index; index2 += -1) {
+            var ball2 = balls_right_b_b[index2];
+            var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
+            if (dist < 130) {
+                ctx.strokeStyle = "#448fda";
+                ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 100 * (Math.random()*100));
                 ctx.lineWidth = "2px";
                 ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
                 ctx.lineTo((0.5 + ball2.x) | 0, (0.5 + ball2.y) | 0);
