@@ -20,89 +20,108 @@
 <head>
     <meta charset="UTF-8">
 
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|IM+Fell+English+SC|Kaushan+Script|Noticia+Text|Noto+Serif|Old+Standard+TT|Song+Myung" rel="stylesheet">
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style_background.css">
+    <link rel="stylesheet" href="style_fonts.css">
+    <link rel="stylesheet" href="style_grid.css">
+    <link rel="stylesheet" href="style_navigation.css">
+    <link rel="stylesheet" href="style_decoration.css">
+    <link rel="shortcut icon" type="image/png" href="http://www.thebookclubproject.org/wp-content/uploads/2015/09/favicon-v21.gif"/>
     <title>Hi! It's me!</title>
     <script src="scripts/navigation.js"></script>
 </head>
-<body style="background: white;">
+<body class="background">
 
     <!--Introduction-->
-
-    <div class="row page container shadow borderless position_relative">
-        <div class="borderless background" style="height:100%"> <!--style="background:#001c33"-->
+    <div class="row page container borderless position_relative">
+        <div>
            <canvas class="borderless content" style="height: 100%">JavaScript is not supported</canvas>
-            <script src="scripts/animated_dots.js"></script>
+            <script src="scripts/web_dots.js"></script>
         </div>
 
-        <div class="position_absolute column_35 borderless left_spec_desc top_spec_desc">
-            <div class="content align_text_center">
-
-                <h1>Jane Ivanova</h1>
-                <p_Merriweather_2>Integration geek</p_Merriweather_2>
+        <div class="position_absolute column_42 borderless left_20 top_spec_desc">
+            <div class="content">
+                <title_1><title_0><text_color_magenta>J</text_color_magenta></title_0>ane Ivanova</title_1>
+                <br/>
+                <title_2>Integration geek</title_2>
                 <br/><br/><br/><br/><br/>
 
-                <p_Montserrat>
+                <p>
                     I'm an integration architect, lead engineer and analyst who doesn't know that there is only 24 hours in a day if there is something to be integrated.
-                </p_Montserrat>
+                </p>
 
-
+                <br/><br/><br/><br/><br/>
                 <br/><br/><br/><br/>
-                <p_Merriweather_1_5>Reach me out: &nbsp; <b>jane.ivanova.work@gmail.com</b>
-                    <br/><br/>
-                    <div style="max-width:2em; max-height:2em; border-radius: 10px; background-color: ghostwhite;
-                    margin: auto; text-align: center; vertical-align: middle; color: #003A75; padding: 0.3em; ">
-                        <a href="documents/Jane%20Ivanova.%20Lead%20Integration%20Engineer.%20Apr%202018.pdf" download style="text-decoration: none">CV</a>
-                    </div>
-                </p_Merriweather_1_5>
+                <footer>
+                    Reach me out: &nbsp; <a href="mailto:jane.ivanova.work@gmail.com">jane.ivanova.work@gmail.com</a>
+                    &nbsp; / &nbsp;
+                    <a href="#contacts" onclick="moveToSection('contacts')">Contacts</a>
+                    &nbsp; / &nbsp;
+                    <a href="documents/Jane%20Ivanova.%20Lead%20Integration%20Engineer.%20Apr%202018.pdf" download>Get CV</a>
+                    &nbsp; / &nbsp;
+                    <a href="#about_me_tabs" onclick="moveToSection('about_me_tabs')">More</a>
+                </footer>
 
             </div>
 
         </div>
-        <div class="position_absolute column_35 borderless top_spec_desc right_spec_desc">
 
+        <div class="position_absolute column_35 borderless top_spec_desc right_spec_desc">
             <div class="content align_text_center" style="height: 100%">
                 <br/>
-                <img src="img/me.jpg" class="image image_shadow">
             </div>
         </div>
-        <div id="arrowAnim">
-            <div class="arrowSliding">
-                <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay1">
-                <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay2">
-                <div class="arrow"></div>
-            </div>
-        </div>
+
     </div> <!--Introduction-->
 
-    <!--Experience-->
-    <div class="page_90 row">
+    <div id="arrowAnim" style="z-index: -1">
+        <div class="arrowSliding">
+            <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay1">
+            <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay2">
+            <div class="arrow"></div>
+        </div>
+    </div>
+
+    <!--About me tabs-->
+    <div id="about_me_tabs" class="page row">
         <div class="row position_relative top_desc" style="width: 100%">
             <div class="tab_bar">
                 <button class="tab_bar_button tab_bar_button_active" onclick="openAbout(event, 'about_me')">About me</button> &nbsp; &nbsp; &nbsp;
                 <button class="tab_bar_button" onclick="openAbout(event, 'about_skills')">Skills</button> &nbsp; &nbsp; &nbsp;
                 <button class="tab_bar_button" onclick="openAbout(event, 'about_experience')">Experience</button> &nbsp; &nbsp; &nbsp;
+                <button class="tab_bar_button" onclick="openAbout(event, 'about_education')">Education</button> &nbsp; &nbsp; &nbsp;
                 <!--<button class="tab_bar_button">My projects</button> &nbsp; &nbsp; &nbsp;-->
                 <!--<div class="tab_bar_button"> <a style="text-decoration: none; margin: 0; height: 100%; width: 100%" href="#contacts">Contacts</a></div><!--onclick="moveToSection('contacts')"-->
             </div>
 
             <!--Tab About me-->
             <div id="about_me" class="tab_about">
-                <div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%">
-                    <!--<div class="sector_name"><p_sector_name>Today</p_sector_name></div>-->
+                <!--<div style="width: 100%">-->
+                <!--<div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%">-->
+                <div class="column_80 position_relative" style="margin-top: 7%; margin-left: 25%; margin-right: 25%">
                     <p2>
                         I was born and currently live in Moscow, Russian Federation. I graduated here from Physics and Mathematics Lyceum "Second School".
-                        The school instilled in me the love for the science, technologies and soccer. Yes, hard mind work requires healthy organism,
+                        The school instilled in me the love for the science, technologies and soccer. I always thought productive mind work requires healthy organism,
                         so I used to play a lot with my classmates at school and after that with students at the
-                        <a href="https://mipt.ru/english/">Moscow Institute of Physics and Technology (MIPT)</a>.
+                        <a href="https://mipt.ru/english/" style="text-decoration: none">Moscow Institute of Physics and Technology (MIPT)</a>.
                         Actually soccer has become a key factor in the formation of my personality. It revealed a leader in me and taught a lot that I use nowadays
                         in my job.
+                    </p2>
+                    <br/><br/>
+                    <p2>
+                        I used to play soccer in all of my free time. I have been a part of the university student team, the captain and a coach of the faculty team.
+                        I used to take part in <a href="http://matchveka.ru/">"Match Veka"</a>, our university tradition with long history to celebrate soccer annually in format
+                        of 24-hours match and other activities, and after I even have been attending training in the FC "Spartak Moscow".
+                        I was awarded a few times but today my form is far in a wardrobe.
                     </p2>
                     <br/><br/>
                     <p2>
@@ -112,22 +131,15 @@
                         very team-oriented - I feel a great delight that working together shoulder to shoulder we can achieve incredible accomplishments.
                         Nonetheless I'm comfortable to work solo as well.
                     </p2>
-                    <br/><br/>
-                    <p2>
-                        I used to play soccer in all of my free time. I have been a part of the university student team, the captain and a coach of the faculty team,
-                        I have been taking part in <a href="http://matchveka.ru/">"Match Veka"</a>, our university tradition with long history to celebrate soccer annually in format
-                        of 24-hours match and other activities and during some time I have been attending training
-                        in the FC "Spartak Moscow". Today my form is far in the closet and awards and photos standing on the shelf remind me about that time.
-                    </p2>
                 </div>
 
-                <div class="column_40 position_relative" style="margin-left: 5%; vertical-align: middle">
-                    <p2>Nowadays, having intensive sport career left behind, I keep myself in tone with regular exercises as I still believe that healthy organism is
-                    a key to effective work of mind. And I need my mind to be in a sharp focus as I have a dream to build an artificial intellect and that requires
-                    a lot of diligence in studying variety of technologies.</p2>
+                <!--<div class="column_40 position_relative" style="margin-left: 5%; vertical-align: middle">-->
+                    <!--<p2>-->
+                    <!--</p2>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div> <!--Tab About me-->
 
-                </div>
-            </div>
 
             <!--Tab About skills-->
             <div id="about_skills" class="tab_about" style="display: none">
@@ -168,7 +180,7 @@
                     </table>
                     </p2>
                 </div>
-            </div>
+            </div> <!--Tab About skills-->
 
             <!--Tab About experience-->
             <div id="about_experience" class="tab_about" style="display: none">
@@ -229,20 +241,59 @@
                     <!--</div>-->
 
                 </div>
-            </div>
+            </div> <!--Tab About experience-->
 
+            <!--Tab About education-->
+            <div id="about_education" class="tab_about" style="display: none;">
+                <div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%;">
+                    <p2>
+                        <title_3>
+                            <a href="https://mipt.ru/english/" style="text-decoration: none">Moscow Institute of Physics and Technology (MIPT)</a>
+                        </title_3>
+                    </p2><br/>
+                    <p2>
+                        Applied Physics and Mathematics, BS.
+                    </p2>
+                    <br/><br/> <br/>
+                    <p2>
+                        <title_3>Courses</title_3>
+                        <ul>
+                            <li>Algorithms, Part I (Princeton University – open course)</li>
+                            <li>Algorithms, Part II (Princeton University – open course)</li>
+                            <li>Computer Science: Algorithms, Theory, and Machines (Princeton University – open course)</li>
+                            <li>Cryptography (Stanford University – open course)</li>
+                            <li>Micro controllers and organization of microprocessor systems (MIPT – extra course)</li>
+                            <li>Paradigm of business programming and SQL (NIX on base of MIPT – extra course)</li>
+                        </ul>
+                    </p2>
+                </div>
+
+                <div class="column_40 position_relative" style="margin-left: 5%;">
+
+                    <p2>
+                        <title_3>Certificates</title_3>
+                        <ul>
+                            <li>Informatica Cloud Data Integration Specialist</li>
+                            <li>Informatica Cloud Data Management Specialist </li>
+                            <li>Java SE 7 Programmer: Oracle Certified Associate</li>
+                            <li>SAP Sustainability and Business Innovation</li>
+                            <li>Rapid Deployment of SAP Solutions</li>
+                        </ul>
+                    </p2>
+                </div>
+
+            </div> <!--Tab About education-->
         </div>
 
         <div class="row position_relative top_desc">
             <div class="column_45 position_relative">
-                <!--<div class="sector_name"><p_sector_name>Looking for</p_sector_name></div>-->
 
             </div>
             <div class="column_45 position_relative">
 
             </div>
         </div>
-    </div>
+    </div> <!--About me tabs-->
 
     <hr class="light borderless" noshade>
 
@@ -263,14 +314,14 @@
 
 
     <!--Contacts-->
-    <div id="contacts" class="page_45 borderless row dashed_border" style="background-color: #dbd9ed; text-align: center" >
+    <div id="contacts" class="page_30 borderless row dashed_border" style="background-color: #dbd9ed; text-align: center" >
         <!--<div class="row position_relative borderless" style="text-align: center">-->
             <div class="column_90 position_relative" style="margin-left: 5%; margin-right: 5%; padding: 0">
                 <h2>Contacts</h2>
                 <p2_a><b>Email:<b> &nbsp;jane.ivanova.work@gmail.com</p2_a> <br/>
                 <p2_a><b>Mobile Phone (Russia):</b> &nbsp;+7 916 687 90 17</p2_a> <br/>
                 <p2_a><b>Skype:</b> &nbsp;Janie.Ivanova</p2_a> <br/>
-                <p2_a><b>LinkedIn:</b> &nbsp;<a href="https://www.linkedin.com/in/jane-ivanova">Jane Ivanova</a></p2_a> <br/><br/>
+                <p2_a><b>LinkedIn:</b> &nbsp;<a href="https://www.linkedin.com/in/jane-ivanova">Jane Ivanova</a></p2_a> <br/><br/><br/>
                 <p2_a>
                     I'm excited to hear from you via email or phone. I live in MSK timezone at the moment and open for a call during 2:00 - 6:00 PM.
                     <br/>

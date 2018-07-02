@@ -1,0 +1,68 @@
+/*Decoration elements*/
+.sector_name { /*button*/
+    border-radius: 5px;
+    height: auto;
+    width: 8em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    padding: 0.3em;
+    border: 1px solid rgba(37, 89, 139, 0.93);
+    background: #285a82 linear-gradient(#285a82, #1f4b75);
+    /*box-shadow: 0 1px 2px rgba(0,0,0,.1);*/
+    box-shadow:
+            inset 0 1px 3px rgba(0, 58, 117, 0.5),
+            0 2px rgba(132, 150, 166, 0.90),
+            0 0 2px rgba(135, 153, 168, 0.90);
+}
+
+p_sector_name {
+    font-family: "Montserrat", sans-serif;
+    /*padding-top: 40%;*/
+    pointer-events: none;
+    vertical-align: middle;
+    text-shadow: -1px -1px #444;
+}
+
+.tab_bar {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.tab_bar_button {
+    /*font-family: "Raleway", sans-serif;*/
+    font-family: "Montserrat", sans-serif;
+    /*padding-top: 40%;*/
+    border-radius: 2px;
+    vertical-align: middle;
+    background: none;
+    height: auto;
+    width: 8em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(0, 47, 95, 0.8);
+    padding: 0.3em;
+    border: 2px solid transparent; /* rgba(0, 47, 95, 0.93);*/
+}
+
+.tab_bar_button_active {
+    border: 2px solid rgba(0, 47, 95, 0.93);
+}
+
+.tab_bar_button:hover {
+    background: rgba(63, 136, 206, 0.69);
+    color: white;
+    font-weight: bold;
+    border: 2px solid transparent; /*rgba(63, 136, 206, 0.69);*/
+}
+
+.tab_about {
+    -webkit-animation:  appear 1s;
+    -moz-animation:     appear 1s;
+    -o-animation:       appear 1s;
+    animation:          appear 1s;
+}

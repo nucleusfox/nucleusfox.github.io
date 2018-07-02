@@ -1,0 +1,218 @@
+.container {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.page {
+    height: 100vh;
+}
+
+.page_25 {
+    height: 25vh;
+}
+
+.page_30 {
+    height: 30vh;
+}
+
+.page_35 {
+    height: 35vh;
+}
+
+.page_40 {
+    height: 40vh;
+}
+
+.page_45 {
+    height: 45vh;
+}
+
+.page_75 {
+    height: 75vh;
+}
+
+.page_90 {
+    height: 90vh;
+}
+
+
+.text {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.position_absolute {
+    position: absolute;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.content {
+    position: relative;
+    top: 0;
+    left: 0;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+body_, html_ {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+
+}
+
+.borderless {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* Elements */
+.left_spec_desc {
+    left: 11%
+}
+
+.left_20 {
+    left: 20%
+}
+
+.top_spec_desc {
+    top: 21%;
+}
+
+.right_spec_desc {
+    left: 55%;
+}
+
+.left_desc {
+    left: 7%
+}
+
+.top_desc {
+    top: 10%;
+}
+
+.right_desc {
+    left: 50%
+}
+
+
+
+/* Elements alignments */
+.align_left {
+    float: left;
+    text-align: left;
+}
+
+.align_right {
+    float: right;
+    text-align: right;
+}
+
+.align_text_center {
+    text-align: center;
+}
+
+.padding_5 {
+    padding-left: 5%
+}
+
+.padding_10 {
+    padding-left: 10%
+}
+
+.padding_15 {
+    padding-left: 15%
+}
+
+.column_25 {
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+
+.column_30 {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+.column_35 {
+    float: left;
+    width: 35%;
+    padding: 15px;
+}
+
+.column_40 {
+    float: left;
+    width: 40%;
+    padding: 15px;
+}
+
+.column_42 {
+    float: left;
+    width: 42%;
+    padding: 15px;
+}
+
+.column_45 {
+    float: left;
+    width: 45%;
+    padding: 15px;
+}
+
+.column_50 {
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+.column_65 {
+    float: left;
+    width: 75%;
+    padding: 15px;
+}
+
+.column_75 {
+    float: left;
+    width: 75%;
+    padding: 15px;
+}
+
+.column_90 {
+    float: left;
+    width: 90%;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+td {
+    vertical-align: top;
+}
+
+.td_left {
+    width: 50%;
+    text-align: right;
+    padding: 1em;
+}
+
+.td_right {
+    width: 50%;
+    text-align: left;
+    padding: 1em;
+}

@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:700);
+
+/*Text*/
+h1 {
+    /*font-family: "Raleway", sans-serif*/
+    font-size: 5em;
+    color: ghostwhite;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
+    pointer-events: none;
+    font-weight: 300;
+    position: relative;
+    /*top: 30%;*/
+    left: 0;
+    right: 0;
+    top : 0;
+}
+
+h2 {
+    /*font-family: "Raleway", sans-serif*/
+    font-size: 2em;
+    color: #002f5f;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
+    pointer-events: none;
+    font-weight: 300;
+    position: relative;
+    /*top: 30%;*/
+    left: 0;
+    right: 0;
+    top : 0;
+}
+
+
+p2 {
+    font-size: 1em;
+    color: dimgrey;
+    font-family: 'Merriweather', serif;
+    /*font-family: "Raleway", sans-serif;*/
+    /*pointer-events: none;*/
+    font-weight: lighter;
+    padding-left: 2em;
+}
+
+p2_a {
+    font-size: 1em;
+    color: #3f3f3f;
+    font-family: 'Merriweather', serif;
+    /*font-family: "Raleway", sans-serif;*/
+    /*pointer-events: none;*/
+    font-weight: lighter;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/*p_Merriweather {*/
+    /*font-size: 2em;*/
+    /*font-family: 'Merriweather', sans-serif;*/
+    /*position: relative;*/
+    /*font-weight: normal;*/
+    /*left: 0;*/
+    /*right: 0;*/
+/*}*/
+
+h_1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 4em;
+    color: ghostwhite;
+    /*font-family: 'Merriweather', serif;*/
+    letter-spacing: 2px;
+    pointer-events: none;
+    font-weight: 300;
+    position: relative;
+    /*top: 30%;*/
+    left: 0;
+    right: 0;
+    top : 0;
+}
+
+
+
+
+
+bottom_text {
+    font-size: 1em;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    /*font-weight: 300;*/
+    position: relative;
+    /*top: 30%;*/
+    left: 0;
+    right: 0;
+}
+
+highlighted_blue {
+    background-color: deepskyblue;
+}
+
+highlighted_green {
+    background-color: greenyellow;
+}
+
+title_0 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+title_1 {
+    font-size: 4em;
+    color: #181818;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
+    pointer-events: none;
+    font-weight: 300;
+    position: relative;
+    left: 0;
+    right: 0;
+    top : 0;
+}
+
+title_2 {
+    font-size: 2em;
+    color: #181818;
+    font-family: 'Merriweather', serif;
+}
+
+title_3 {
+    font-size: 1.5em;
+    color: #181818;
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-size: 1.5em;
+    color: dimgrey;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-weight: normal;
+    left: 0;
+    right: 0;
+    align: left;
+}
+
+footer {
+    font-size: 1.2em;
+    color: dimgrey;
+    font-family: 'Merriweather', serif;
+    /*font-weight: 300;*/
+}
+
+html {
+    font-family: 'Merriweather', serif;
+}
+
+text_color_red {
+    color: red;
+}
+
+text_color_blue {
+    color: dodgerblue;
+}
+
+text_color_green {
+    color: limegreen;
+}
+
+text_color_magenta {
+    color: darkmagenta;
+    /*blueviolet;*/
+}
+
+
+
+
+
+/*t1 {*/
+    /*font-family: 'Lato', sans-serif;*/
+/*}*/
+/*t2 {*/
+/*font-family: 'Noto Serif', serif;*/
+/*}*/
+/*t3 {*/
+/*font-family: 'Crimson Text', serif;*/
+/*}*/
+/*t4 {*/
+/*font-family: 'IM Fell English SC', serif;*/
+/*}*/
+/*t5 {*/
+/*font-family: 'Acme', sans-serif;*/
+/*}*/
+/*t6 {*/
+/*font-family: 'Abril Fatface', cursive;*/
+/*}*/
+/*t7 {*/
+/*font-family: 'EB Garamond', serif;*/
+/*}*/
+/*t8 {*/
+/*font-family: 'Alegreya', serif;*/
+/*}*/
+/*t9 {*/
+/*font-family: 'Great Vibes', cursive;*/
+/*}*/
+/*t10 {*/
+/*font-family: 'Noticia Text', serif;*/
+/*}*/
+/*t11 {*/
+/*font-family: 'Kaushan Script', cursive;*/
+/*}*/
+/*t12 {*/
+/*font-family: 'Old Standard TT', serif;*/
+/*}*/
+/*t13 {*/
+/*font-family: 'Cookie', cursive;*/
+/*}*/
