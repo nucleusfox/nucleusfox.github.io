@@ -22,6 +22,7 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|IM+Fell+English+SC|Kaushan+Script|Noticia+Text|Noto+Serif|Old+Standard+TT|Song+Myung" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
@@ -40,8 +41,9 @@
     <!--Introduction-->
     <div class="row page container borderless position_relative">
         <div>
-           <canvas class="borderless content" style="height: 100%">JavaScript is not supported</canvas>
+           <canvas id="canvas_web_dots" class="borderless content" style="height: 100%">JavaScript is not supported</canvas>
             <script src="scripts/web_dots.js"></script>
+            <!--<script src="scripts/dragon.js"></script>-->
         </div>
 
         <div class="position_absolute column_42 borderless left_20 top_spec_desc">
@@ -99,6 +101,8 @@
                 <button class="tab_bar_button" onclick="openAbout(event, 'about_skills')">Skills</button> &nbsp; &nbsp; &nbsp;
                 <button class="tab_bar_button" onclick="openAbout(event, 'about_education')">Education</button> &nbsp; &nbsp; &nbsp;
                 <button class="tab_bar_button" onclick="openAbout(event, 'about_me')">About me</button> &nbsp; &nbsp; &nbsp;
+                <!--<button class="tab_bar_button" onclick="moveToSection('projects')">Projects</button> &nbsp; &nbsp; &nbsp;-->
+                <a href="#projects" onclick="moveToSection('projects')"><button class="tab_bar_button">Projects</button></a> &nbsp; &nbsp; &nbsp;
                 <!--<button class="tab_bar_button">My projects</button> &nbsp; &nbsp; &nbsp;-->
             </div>
 
@@ -207,15 +211,14 @@
             <!--Tab About education-->
             <div id="about_education" class="tab_about" style="display: none;">
                 <div class="column" style="text-align: center">
-                <p2>
                     <title_2>
-                        <a href="https://mipt.ru/english/" style="text-decoration: none">Moscow Institute of Physics and Technology (MIPT)</a>
+                        <a href="https://mipt.ru/english/" style="text-decoration: none">Moscow Institute of Physics and
+                            Technology (MIPT)</a>
                     </title_2>
-                </p2><br/>
-                <p2><title_3>
-                    Applied Physics and Mathematics, BS.
-                </title_3>
-                </p2>
+                    <br/>
+                    <title_3>
+                        Applied Physics and Mathematics, BS.
+                    </title_3>
                 </div>
 
                 <div class="column_40 " style="margin-left: 5%; margin-right: 5%;">
@@ -294,29 +297,28 @@
         </div>
     </div> <!--About me tabs-->
 
-    <hr class="light borderless" noshade>
-
-<!--    <!--Projects
-    <div class="page_75 row borderless" style="background-color: #dbd9ed; padding-left: 5%">
-
-        <div class="row position_relative top_desc borderless">
-            <div class="column_45 position_relative">
-                <p2></p2>
-
-            </div>
-            <div class="column_45 position_relative">
-
-            </div>
+    <!--Projects -->
+    <div id="projects" class="page_auto container borderless position_relative" style="align-items: center;">
+        <div class="column" style="text-align: center">
+            <br/><br/>
+                <title_1><text_color_darkblue> Projects </text_color_darkblue></title_1>
         </div>
-    </div> -->
-    <!--<hr class="light borderless" noshade>-->
-
+        <br/><br/>
+        <div class="row projects_box position_relative">
+            <a href="dragon.html" target="_blank" class="project project_image" style="background-image:url(img/Dragon%20Curve%2017%20p2.png)"><div class="project_name">DRAGON CURVE</div> </a>
+            <!--<a href="dragon.html" target="_blank" class="project project_image" style="background-image:url(img/Dragon%20Curve%2017%20p1.png)"><div class="project_name">DRAGON 17 1</div> </a>-->
+            <!--<a href="dragon.html" target="_blank" class="project project_image" style="background-image:url(img/Dragon%20Curve%2017%20p1.png)"><div class="project_name">DRAGON 17 1</div> </a>-->
+            <!--<a href="dragon.html" target="_blank" class="project project_image" style="background-image:url(img/Dragon%20Curve%2017%20p1.png)"><div class="project_name">DRAGON 17 1</div> </a>-->
+            <!--<a href="dragon.html" target="_blank" class="project project_image" style="background-image:url(img/Dragon%20Curve%2017%20p1.png)"><div class="project_name">DRAGON 17 1</div> </a>-->
+        </div>
+    </div> <!-- Projects -->
 
     <!--Contacts-->
+    <hr class="light borderless" noshade>
     <div id="contacts" class="page_30 borderless row dashed_border" style="background-color: #dbd9ed; text-align: center" >
             <div class="column_90 position_relative" style="margin-left: 5%; margin-right: 5%; padding: 0">
                 <h2>Contacts</h2>
-                <p2_a><b>Email:<b> &nbsp;jane.ivanova.work@gmail.com</p2_a> <br/>
+                <p2_a><b>Email:</b> &nbsp;jane.ivanova.work@gmail.com</p2_a> <br/>
                 <p2_a><b>Mobile Phone (Russia):</b> &nbsp;+7 916 687 90 17</p2_a> <br/>
                 <p2_a><b>Skype:</b> &nbsp;Janie.Ivanova</p2_a> <br/>
                 <p2_a><b>LinkedIn:</b> &nbsp;<a href="https://www.linkedin.com/in/jane-ivanova">Jane Ivanova</a></p2_a> <br/><br/><br/>
@@ -329,6 +331,8 @@
                 </p2_a>
             </div>
     </div>
+
+    <!--<hr class="light borderless" noshade>-->
 
 
     <div class="row borderless position_relative">

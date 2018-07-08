@@ -1,4 +1,4 @@
-var canvas = document.querySelector("canvas");
+var canvas = document.getElementById("canvas_web_dots");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight * 2;
 var width = canvas.width/3;

@@ -147,6 +147,10 @@ text_color_red {
     color: red;
 }
 
+text_color_darkblue {
+    color: #002f5f;
+}
+
 text_color_blue {
     color: dodgerblue;
 }
@@ -161,8 +165,33 @@ text_color_magenta {
 }
 
 
+.project_name {
+    font-size: 4em;
+    color: #b8dd00;
+    /*color: #002f5f;*/
+    font-family: 'Poller One', cursive;
+    font-weight: bolder;
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*padding: auto;*/
+    /*margin: auto;*/
+}
 
 
+/* Dragon menu */
+dragon_menu {
+    font-size: 3%;
+    color: dimgrey;
+    font-family: 'Merriweather', serif;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 /*t1 {*/
     /*font-family: 'Lato', sans-serif;*/

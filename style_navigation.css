@@ -25,6 +25,8 @@ p_sector_name {
     text-shadow: -1px -1px #444;
 }
 
+
+/* Navigation bar for About section */
 .tab_bar {
     width: 100%;
     align-items: center;
@@ -65,4 +67,33 @@ p_sector_name {
     -moz-animation:     appear 1s;
     -o-animation:       appear 1s;
     animation:          appear 1s;
+}
+
+/* Draggable menu for dragon */
+#dragon_menu_bar {
+    position: absolute;
+    left: 5vw;
+    top: 5vw;
+    /*margin: 20px;*/
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+#dragon_menu {
+    padding: 3%;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dragon_menu_button {
+    padding: 0%;
+    text-align: center;
+    height: 5%;
+    width: 90%;
 }

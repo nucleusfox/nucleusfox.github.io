@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/J%20shadowed%202.png"/>
+    <link rel="stylesheet" href="style_background.css">
+    <link rel="stylesheet" href="style_grid.css">
+    <link rel="stylesheet" href="style_font.css">
+    <link rel="stylesheet" href="style_navigation.css">
+    <title>ane Ivanova</title>
+</head>
+<body class="borderless" style="max-height: 100vw; max-width:100vw;">
+    <div id="dragon_menu_bar">
+        <div id="dragon_menu">Parameters</div>
+        <form id="dragonParameters" action="javascript:redrawDragon()">
+            <dragon_menu>Generation <input type="text" id="generation" name="generation" size="1" value="10"/></dragon_menu>
+            <br/>
+            <dragon_menu>Zoom out 1/<input type="text" id="zoom" name="zoom" size="1" value="2"/></dragon_menu>
+            <br/>
+            <dragon_menu>Speed <input type="text" id="speed" name="speed" size="1" value="4"/></dragon_menu>
+            <br/>
+            <dragon_menu><input class="dragon_menu_button" type="submit" value="Redraw"/></dragon_menu>
+        </form>
+        <form id="dragonTerminate" action="javascript:terminate()">
+            <input class="dragon_menu_button" type="submit" value="Stop"/>
+        </form>
+    </div>
+    <script src="scripts/navigation.js"></script>
+
+    <div style="max-height: 100%; max-width: 100%; overflow: scroll;">
+    <!--<p id="output"></p>-->
+    <canvas id="canvas_dragon" class="borderless" style="min-height: 100%">JavaScript is not supported</canvas>
+    <script src="scripts/dragon.js"></script>
+    </div>
+
+    <div class="row borderless position_relative">
+        <br/>
+        <div class="column_50 borderless" style="padding-top: 0">
+            <bottom_text style="padding-left: 15px;">Powered by <a href="https://github.com/nucleusfox"
+                                                                   style="color: red; text-decoration: none">nucleusfox</a>'s
+                brain.
+            </bottom_text>
+        </div>
+    </div>
+</body>

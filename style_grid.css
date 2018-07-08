@@ -35,6 +35,9 @@
     height: 90vh;
 }
 
+.page_auto {
+    height: auto;
+}
 
 .text {
     position: relative;
@@ -62,12 +65,12 @@
     height: 100%;
 }
 
-body_, html_ {
-    padding: 0;
-    margin: 0;
-    min-height: 100%;
+/*body_, html_ {*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*min-height: 100%;*/
 
-}
+/*}*/
 
 .borderless {
     padding: 0;
