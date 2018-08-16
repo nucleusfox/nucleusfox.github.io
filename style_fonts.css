@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:700);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
 
 /*Text*/
 h1 {
@@ -161,27 +163,56 @@ text_color_green {
 
 text_color_magenta {
     color: darkmagenta;
-    /*blueviolet;*/
+    /*color: blueviolet;*/
+}
+
+text_color_violet {
+    color: rgba(190, 137, 249, 0.95);
 }
 
 
 .project_name {
-    font-size: 4em;
-    color: #b8dd00;
+    font-size: 2.5vw;
+    /*color: #b8dd00;*/
     /*color: #002f5f;*/
-    font-family: 'Poller One', cursive;
+    /*font-family: 'Poller One', cursive;*/
     font-weight: bolder;
-    /*display: inline-block;*/
-    /*vertical-align: middle;*/
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    /*padding: auto;*/
-    /*margin: auto;*/
 }
 
+.project_name.dragon {
+    /*color: #b8dd00;*/
+    color: #be10c2;
+    font-family: 'Poller One', cursive;
+}
+
+.project_name.vocabulary {
+    color: #e0f4fe;
+    font-family: 'Nunito', serif;
+}
+
+
+.project_description {
+    position: absolute;
+    font-size: 1vw;
+    font-weight: bold;
+    color: white;
+    min-width: 80%;
+    min-height: 70%;
+    text-align: center;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: opacity .2s, visibility .2s;
+}
 
 /* Dragon menu */
 dragon_menu {

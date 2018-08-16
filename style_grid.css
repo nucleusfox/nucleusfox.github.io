@@ -39,6 +39,10 @@
     height: auto;
 }
 
+.page_min_30 {
+    min-height: 30vh;
+}
+
 .text {
     position: relative;
     top: 0;
