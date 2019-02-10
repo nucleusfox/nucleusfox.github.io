@@ -108,7 +108,7 @@ hr.dark {
     justify-content: center;
     margin: 10% auto;
     max-width: 70%;
-    min-height: 30vh;
+    /*min-height: 20vh;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -120,13 +120,14 @@ hr.dark {
     max-width: 35%;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 0px 50px -3px rgba(208, 227, 244, 0.68);
+    box-shadow: 0px 0px 25px -3px rgba(208, 227, 244, 0.68);
     opacity: 1;
 }
 
 .project:hover .project_image .project_name {
     position: relative;
     flex-grow: 1;
+    max-width: 35%;
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 50px 10px #c7e0f4;
@@ -164,7 +165,7 @@ hr.dark {
 }
 
 .project:before {
-    z-index: 2;
+    /*z-index: 2;*/
     position: absolute;
     content: "";
 }
