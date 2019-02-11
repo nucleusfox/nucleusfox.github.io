@@ -53,6 +53,10 @@ p2_a {
     font-weight: lighter;
 }
 
+b {
+    font-weight: bold;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -145,28 +149,32 @@ html {
     font-family: 'Merriweather', serif;
 }
 
-text_color_red {
+tc_red {
     color: red;
 }
 
-text_color_darkblue {
+tc_darkblue {
     color: #002f5f;
 }
 
-text_color_blue {
+tc_lightblack {
+    color: #2a2a2a;
+}
+
+tc_blue {
     color: dodgerblue;
 }
 
-text_color_green {
+tc_green {
     color: limegreen;
 }
 
-text_color_magenta {
+tc_magenta {
     color: darkmagenta;
     /*color: blueviolet;*/
 }
 
-text_color_violet {
+tc_violet {
     color: rgba(190, 137, 249, 0.95);
 }
 
