@@ -33,7 +33,6 @@ h2 {
     top : 0;
 }
 
-
 p2 {
     font-size: 1em;
     color: dimgrey;
@@ -51,6 +50,12 @@ p2_a {
     /*font-family: "Raleway", sans-serif;*/
     /*pointer-events: none;*/
     font-weight: lighter;
+}
+
+p3 {
+    font-size: 1.5em;
+    color: darkgrey;
+    font-family: 'EB Garamond', cursive;
 }
 
 b {

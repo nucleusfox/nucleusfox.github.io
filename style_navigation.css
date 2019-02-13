@@ -42,12 +42,15 @@ p_sector_name {
     vertical-align: middle;
     background: none;
     height: auto;
-    width: 8em;
+    min-width: 8em;
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
     color: rgba(0, 47, 95, 0.8);
-    padding: 0.3em;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     border: 2px solid transparent; /* rgba(0, 47, 95, 0.93);*/
 }
 
