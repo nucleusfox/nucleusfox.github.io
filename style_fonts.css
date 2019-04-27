@@ -303,6 +303,7 @@ dragon_menu {
 .row.spec_table_section .cell {
     font-family: Poppins-Regular;
     font-size: 1.4em;
+    font-weight: bold;
 }
 
 .row .cell {
