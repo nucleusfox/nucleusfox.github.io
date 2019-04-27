@@ -117,20 +117,23 @@ hr.dark {
 .project {
     position: relative;
     flex-grow: 1;
-    max-width: 35%;
+    max-width: 25vw;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 0px 25px -3px rgba(208, 227, 244, 0.68);
+    /*box-shadow: 0px 0px 25px -3px rgba(208, 227, 244, 0.68);*/
+    box-shadow: 0px 0px 30px -3px #c9d9df;
     opacity: 1;
 }
 
 .project:hover .project_image .project_name {
     position: relative;
     flex-grow: 1;
-    max-width: 35%;
+    max-width: 25vw;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0px 0px 50px 10px #c7e0f4;
+    /*box-shadow: 0px 0px 50px 10px #c7e0f4;*/
+    box-shadow: 0px 0px 50px -10px #a2afb4;
     opacity: 0.2;
 }
 
@@ -160,8 +163,7 @@ hr.dark {
     padding-top: 83.33333%;
     display: block;
     content: "";
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20vw;
 }
 
 .project:before {
@@ -171,15 +173,36 @@ hr.dark {
 }
 
 .project_image {
-    margin: 5%;
+    margin: 2vw;
     border-radius: 3px;
     /*box-shadow: 0px 0px 50px 3px #c7e0f4;*/
     text-decoration: none;
     text-align: center;
 }
 
+.project_image.shaded {
+    /*opacity: 0.6;*/
+    background-color: grey;
+}
+
 .social_icon {
     margin: 5%;
     text-decoration: none;
     text-align: center;
+}
+
+.diagram_image {
+    /*max-width: 70%;*/
+    /*width: 50%;*/
+    /*height: 100%;*/
+    /*object-fit: contain;*/
+
+}
+
+.inner_board {
+    box-shadow: inset 3px 5px 8px 13px rgba(104, 104, 104, 0.64);
+}
+
+.wrap-table100 {
+    box-shadow: 0px 0px 50px -10px #a2afb4;
 }

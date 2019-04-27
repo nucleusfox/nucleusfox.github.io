@@ -100,3 +100,31 @@ p_sector_name {
     height: 5%;
     width: 90%;
 }
+
+
+.page_button {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 2px;
+    vertical-align: middle;
+    background: none;
+    height: auto;
+    min-width: 8em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    /*color: rgba(0, 47, 95, 0.8);*/
+    color: #666666;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: 2px solid transparent; /* rgba(0, 47, 95, 0.93);*/
+    /*border: 2px solid rgba(0, 47, 95, 0.93);*/
+}
+
+/*.page_button:hover {*/
+    /*background: rgba(63, 136, 206, 0.69);*/
+    /*color: white;*/
+    /*font-weight: bold;*/
+    /*border: 2px solid transparent; !*rgba(63, 136, 206, 0.69);*!*/
+/*}*/

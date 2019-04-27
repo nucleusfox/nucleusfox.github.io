@@ -33,6 +33,10 @@ h2 {
     top : 0;
 }
 
+h3 {
+    font-size: 1.3em;
+}
+
 p2 {
     font-size: 1em;
     color: dimgrey;
@@ -57,6 +61,17 @@ p3 {
     color: darkgrey;
     font-family: 'EB Garamond', cursive;
 }
+
+p4 {
+    font-size: 1.3em;
+    color: dimgrey;
+    font-family: 'Merriweather', serif;
+    /*font-family: "Raleway", sans-serif;*/
+    /*pointer-events: none;*/
+    font-weight: lighter;
+
+}
+
 
 b {
     font-weight: bold;
@@ -197,6 +212,12 @@ tc_violet {
     transform: translate(-50%, -50%);
 }
 
+.project_name.cvprofile {
+    /*color: #b8dd00;*/
+    color: #5646c2;
+    font-family: 'Merriweather', sans-serif;
+}
+
 .project_name.dragon {
     /*color: #b8dd00;*/
     color: #be10c2;
@@ -276,3 +297,15 @@ dragon_menu {
 /*t13 {*/
 /*font-family: 'Cookie', cursive;*/
 /*}*/
+
+
+
+.row.spec_table_section .cell {
+    font-family: Poppins-Regular;
+    font-size: 1.4em;
+}
+
+.row .cell {
+    font-family: Poppins-Regular;
+    font-size: 1em;
+}
