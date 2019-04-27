@@ -133,6 +133,12 @@
     padding-left: 15%
 }
 
+.column_20 {
+    float: left;
+    width: 20%;
+    /*padding: 15px;*/
+}
+
 .column_25 {
     float: left;
     width: 25%;
@@ -171,13 +177,13 @@
 
 .column_50 {
     float: left;
-    width: 50%;
-    padding: 15px;
+    width: 50vw;
+    /*padding: 15px;*/
 }
 
 .column_65 {
     float: left;
-    width: 75%;
+    width: 65%;
     padding: 15px;
 }
 
@@ -194,12 +200,12 @@
 }
 
 .column {
-    float: left;
+    /*float: left;*/
     width: 100%;
     padding: 15px;
 }
 
-.row:after {
+.section_row:after {
     content: "";
     display: table;
     clear: both;
@@ -219,4 +225,17 @@ td {
     width: 50%;
     text-align: left;
     padding: 1em;
+}
+
+.form_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.inner_board {
+    width: 25vw;
+    height: 25vw;
 }
