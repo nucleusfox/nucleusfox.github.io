@@ -12,6 +12,7 @@
     justify-content: center;
     flex-wrap: wrap;
     /*padding: 33px 30px;*/
+    margin-top: 2vw;
     padding: 3vw 3vw;
 }
 
@@ -46,6 +47,12 @@
     background: #7784e0;
 }
 
+.row.spec_table_subsection {
+    width: 100%;
+    color: #ffffff;
+    background: #c1c7eb;
+}
+
 .row .cell {
     color: #666666;
     /*line-height: 1.2;*/
@@ -60,9 +67,11 @@
 /*.row.header .cell {*/
 .row.spec_table_section .cell {
     color: #fff;
-    /*line-height: 1.2;*/
-    /*font-weight: unset !important;*/
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
 
+.row.spec_table_subsection .cell {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }

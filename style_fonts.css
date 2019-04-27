@@ -69,7 +69,13 @@ p4 {
     /*font-family: "Raleway", sans-serif;*/
     /*pointer-events: none;*/
     font-weight: lighter;
+}
 
+p5 {
+    font-size: 1.5em;
+    color: dimgrey;
+    font-family: 'Merriweather', serif;
+    font-weight: lighter;
 }
 
 
@@ -303,6 +309,12 @@ dragon_menu {
 .row.spec_table_section .cell {
     font-family: Poppins-Regular;
     font-size: 1.4em;
+    font-weight: bold;
+}
+
+.row.spec_table_subsection .cell {
+    font-family: Poppins-Regular;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
