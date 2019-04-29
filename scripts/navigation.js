@@ -9,11 +9,13 @@ function openAbout(evt, tabAbout) {
     tablinks = document.getElementsByClassName("tab_bar_button");
     for (i = 0; i < x.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" tab_bar_button_active", "");
+        tablinks[i].className = tablinks[i].className.replace(" drop-shadow", "");
     }
 
     document.getElementById(tabAbout).style.display = "block";
 
     evt.currentTarget.className += " tab_bar_button_active";
+    evt.currentTarget.className += " drop-shadow";
 }
 
 

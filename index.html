@@ -27,7 +27,7 @@
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">-->
     <link rel="stylesheet" href="style_background.css">
     <link rel="stylesheet" href="style_fonts.css">
     <link rel="stylesheet" href="style_grid.css">
@@ -49,7 +49,7 @@
 
         <div class="position_absolute column_42 borderless left_20 top_spec_desc">
             <div class="content">
-                <title_1><title_0><tc_magenta>J</tc_magenta></title_0>ane Ivanova</title_1>
+                <title_1><title_0 style="text-shadow: 3px 2px 4px #becdd3;"><tc_magenta>J</tc_magenta></title_0>ane Ivanova</title_1>
                 <br/>
                 <title_2>Integration geek</title_2>
                 <br/><br/><br/><br/><br/>
@@ -69,7 +69,7 @@
                     &nbsp; / &nbsp; <br/>
                     <a href="documents/Jane%20Ivanova.%20Lead%20Integration%20Engineer.%20Feb%202019.pdf" download>CV (Simple English)</a>
                     &nbsp; / &nbsp;
-                    <a href="http://cvprofiler.us-e2.cloudhub.io/cvprofile/Jane Ivanova. Lead Integration Engineer. Geek format.pdf">CV (Geek English)</a>
+                    <a href="http://cvprofiler.us-e2.cloudhub.io/cvprofile/Jane Ivanova. Lead Integration Engineer. Geek format.pdf" download>CV (Geek English)</a>
                 </footer>
 
             </div>
@@ -100,7 +100,7 @@
     <div id="about_me_tabs" class="page section_row">
         <div class="section_row position_relative top_desc" style="width: 100%;">
             <div class="tab_bar">
-                <button class="tab_bar_button tab_bar_button_active" onclick="openAbout(event, 'about_experience')">Experience</button> &nbsp; &nbsp; &nbsp;
+                <button class="tab_bar_button tab_bar_button_active drop-shadow" onclick="openAbout(event, 'about_experience')">Experience</button> &nbsp; &nbsp; &nbsp;
                 <button class="tab_bar_button" onclick="openAbout(event, 'about_skills')">Skills</button> &nbsp; &nbsp; &nbsp;
                 <button class="tab_bar_button" onclick="openAbout(event, 'about_education')">Education</button> &nbsp; &nbsp; &nbsp;
                 <button class="tab_bar_button" onclick="openAbout(event, 'about_me')">About me</button> &nbsp; &nbsp; &nbsp;
@@ -368,6 +368,39 @@
         </div>
         <br/><br/>
         <div class="section_row projects_box position_relative">
+            <a href="" class="project project_image"
+               style="background-image:url(img/Projects/rasp.jpg)">
+                <div class="project_name soon">Coming soon..</div>
+                <div class="project_description_layer">
+                    <p class="project_description">
+                        Face control and Salesforce security system on Raspberry PI<br/>
+                        <br/>
+                    </p>
+                </div>
+            </a>
+
+            <a href="" class="project project_image"
+               style="background-image:url(img/Projects/rasp2.jpg)">
+                <div class="project_name soon">Coming soon..</div>
+                <div class="project_description_layer">
+                    <p class="project_description">
+                        Control the light in the room from Salesforce on Raspberry PI<br/>
+                        <br/>
+                    </p>
+                </div>
+            </a>
+
+            <!--<a href="#" class="project project_image"-->
+            <!--style="background-image:url(img/Dragon%20Curve%2017%20p2.png)">-->
+            <!--<div class="project_name ">Coming soon..</div>-->
+            <!--<div class="project_description_layer">-->
+            <!--<p class="project_description">-->
+            <!--Mule integration with Salesforce on Rapsberry PI<br/>-->
+            <!--<br/>-->
+            <!--</p>-->
+            <!--</div>-->
+            <!--</a>-->
+
             <a href="cvprofile.html" target="_blank" class="project project_image"
                style="background:linear-gradient(0deg,rgba(160,148,161,0.3),rgba(20,0,255,0.3)),url(img/CVProfileDiagrams/Screenshot_2019-04-22%20Screenshot.png)">
                <!--style="background-image:url(img/CVProfileDiagrams/Screenshot_2019-04-22%20Screenshot.png)">-->
@@ -415,6 +448,7 @@
                     </p>
                 </div>
             </a>
+
         </div>
     </div> <!-- Projects -->
 

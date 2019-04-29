@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:700);
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 
 /*Text*/
@@ -218,14 +219,18 @@ tc_violet {
     transform: translate(-50%, -50%);
 }
 
+.project_name.soon {
+    /*color: #fbfdff;*/
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
 .project_name.cvprofile {
-    /*color: #b8dd00;*/
     color: #5646c2;
     font-family: 'Merriweather', sans-serif;
 }
 
 .project_name.dragon {
-    /*color: #b8dd00;*/
     color: #be10c2;
     font-family: 'Poller One', cursive;
 }
@@ -238,7 +243,7 @@ tc_violet {
 
 .project_description {
     position: absolute;
-    font-size: 1vw;
+    font-size: 0.8vw;
     font-weight: bold;
     color: white;
     min-width: 80%;
