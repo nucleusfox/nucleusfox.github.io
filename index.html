@@ -60,8 +60,9 @@
 
                 <br/><br/><br/><br/><br/>
                 <br/><br/><br/><br/>
-                <footer>
-                    Reach out to me: &nbsp; <a href="mailto:jane.ivanova.work@gmail.com">jane.ivanova.work@gmail.com</a>
+                <footer class="drop-shadow">
+                    <a href="mailto:jane.ivanova.work@gmail.com?subject=I've got something interesting">Reach out to me: &nbsp; jane.ivanova.work at gmail.com</a>
+                    <!--Reach out to me: &nbsp; jane.ivanova.work@gmail.com-->
                     &nbsp; / &nbsp;
                     <a href="#contacts" onclick="moveToSection('contacts')">Contacts</a>
                     &nbsp; / &nbsp;
@@ -117,31 +118,35 @@
                     <table class="borderless" style="width:100%;">
                         <tr>
                             <td class="td_left">Noticeable integrated systems :</td>
-                            <td class="td_right"><tc_darkblue>Salesforce (SOAP/REST/Bulk APIs, Apex-services)</tc_darkblue>,
+                            <td class="td_right"><tc_darkblue>Salesforce</tc_darkblue> (SOAP/REST/Bulk APIs, Apex-services),
                                 <tc_darkblue>SAP CRM/ERP/BW</tc_darkblue>, SAP IBP, Yandex-API,
                                 <tc_darkblue>Microsoft SQL Server</tc_darkblue>, Oracle Database, MySQL</td>
                         </tr>
                         <tr>
                             <td class="td_left">Integration Platforms :</td>
-                            <td class="td_right">Anypoint Mulesoft, Informatica Cloud, SAP XI/PI/PO, SAP HCI, Zapier, Jitterbit</td>
+                            <td class="td_right">Anypoint Mulesoft, Informatica Cloud, Zapier, SAP XI/PI/PO, SAP HCI</td>
                         </tr>
                         <tr>
                             <td class="td_left">Programming languages :</td>
                             <td class="td_right"><tc_darkblue>Java (middle)</tc_darkblue>
+                                <br/>JavaScript (some experience)
                                 <br/>Apex (middle)
                                 <br/>SAP ABAP (previous experience)
-                                <br/>C/C++ (previous experience) <br/>T-SQL (some experience)
+                                <br/>C/C++ (previous experience)
+                                <br/>PL/SQL (some experience)
                                 <br/><tc_darkblue>Python (academic experience)</tc_darkblue></td>
                         </tr>
                         <tr>
                             <td class="td_left">Protocols and technologies :</td>
-                            <td class="td_right">SOAP/REST (XML/JSON), HTTP/HTTPS,
+                            <td class="td_right">
+                                SOAP/REST (XML/JSON), HTTP/HTTPS,
                                 TCP/IP, SSL/TLS, FTP/SFTP, SSH,
                                 NFS, ODBC/JDBC, SAP ABAP-proxy, SAP RFC BAPI</td>
                         </tr>
                         <tr>
                             <td class="td_left">DB schema administration:</td>
-                            <td class="td_right"><tc_darkblue>Microsoft SQL Server</tc_darkblue>,
+                            <td class="td_right">
+                                <tc_darkblue>Microsoft SQL Server</tc_darkblue>,
                                 MySQL,
                                 <tc_darkblue>Oracle Database</tc_darkblue></td>
                         </tr>
@@ -160,60 +165,102 @@
 
             <!--Tab About experience-->
             <div id="about_experience" class="tab_about">
-                <div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%">
-                    <p2>
-                        I entered the company as an SAP ABAP developer and after 2 years decided to busy myself with integration tasks.
-                        Thereby I was transferred to SAP PI division, which was delivering solutions on SAP enterprise application integration bus.
-                    </p2><br/><p2>
-                        So during the next 3.5 years I was working hard on delivering
-                        cloud and hybrid integration solutions for the clients in various roles: consultant, business/system analyst, architect and developer.
-                    </p2><br/><p2>
-                        Due to the nature of consultancy business I got to know
-                        lots of different integration technologies and iPaaS systems. Mostly working on SAP - Salesforce integration, I became some sort of an SAP-Salesforce integration ninja,
-                        as I became familiar with all the possible ways of integration between these two systems:
-                        using Salesforce Enterprise and Partner SOAP API/REST API, Salesforce custom web-services,
-                        SAP RFC, ABAP-Proxies, SAP IDOCs, SICF services,
-                        through middleware (SAP PI/PO, SAP HCI, Informatica Cloud, Anypoint Mulesoft, Jitterbit, Dell Boomi),
-                        and without.
-                    </p2><br/><p2>
-                        One of my great achievement was a development of a customizable SAP adapter for the direct integration with Salesforce, which exposed
-                        SAP Proxy over Salesforce enterprise API and regenerated the structures upon change in Salesforce.
-                </p2><br/><p2>
-                    I quickly became a leading integration specialist. I helped company to hire talented people and build a solid team with ultimate skills inspired to bring system integration into life.
-                        During that time I have enabled 2 new branches of integration expertise: the Informatica Cloud and Anypoint Mulesoft platforms.
-                        That helped company to increase their sales and brought several important projects in the US and EMEA.
-                    </p2>
+                <div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%;">
+                    <div style="vertical-align: middle">
+                        <img src="img/Index/Work%20Experience.png" width="123%"/>
+                    </div>
                 </div>
+                <!--<div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%; text-align: justify;">-->
+                    <!--<p2>-->
+                        <!--For the 5 years and a bit more I worked as an IT consultant in SAP development and its integration-->
+                        <!--at Masterdata and later in CT Consulting. After 2 years of service in capacity of SAP ABAP developer-->
+                        <!--I moved to integration  and started my journey over miriad of systems, platforms and technologies.-->
+                        <!--Primarily I has been integrating SAP CRM (customer relationship management) with Salesforce, but-->
+                        <!--often with many other systems of a client's landscape, like databases, files storage and other-->
+                        <!--web-servies.-->
+                    <!--</p2><br/><p2> Among interesting projects I developed a direct integration between SAP ERP and-->
+                        <!--Salesforce over its enterprise SOAP API to relay the set of business objects in a form of a-->
+                        <!--typical SAP proxy plus a service to regenerate this proxy if the objects' structure is changed-->
+                        <!--in the Salesforce system. The task was not trivial as it required a lot of adaptation of modern-->
+                        <!--techniques used by Salesforce for the outdated SAP, but it was very interesting for me to overcome-->
+                        <!--all of these obstacles and finally make it work.-->
+                    <!--</p2><br/><p2>-->
+                        <!--In order to help the company to develop the integration department I was working in, I researched-->
+                        <!--several platforms from the top of the Magic Quadrant for enterprise integration platforms (iPaaS).-->
+                        <!--I convinced my bosses that we can improve our integration solutions, and that some platform choices-->
+                        <!--could perform better in certain cases. This way I became a lead the new practice of cloud integration.-->
+                        <!--I mastered the most commonly used platforms, Informatica and MuleSoft, got certified in both,-->
+                        <!--successfully implemented several projects and consequently got a team to lead international projects-->
+                        <!--with cloud integration.-->
+                    <!--</p2><br/><br/><p2>-->
+                        <!--I was often sent to the client's site to gather requirements from the first hand of client's business-->
+                        <!--users and to work closely with their technical teams. I visited Spain, France, India, Mexico, USA and-->
+                        <!--taking advantage of transit trips also some other European countries. But the downside of such-->
+                        <!--development in my career was that it consumed all of my private time - by the off-hours flights, travels-->
+                        <!--organisation and team building with our foreign colleagues. At some moment I felt that my work at-->
+                        <!--CT Consulting reached the point when I gave my work all my time and soul and had nothing left for myself,-->
+                        <!--neither I got a compensation for extra responsibilities I gained during the course of my work.-->
+                    <!--</p2><br/><br/><p2>-->
+                        <!--Around a year and a half ago I become a contractor to control which projects to take and their-->
+                        <!--traveling needs, as well as I wanted to focus on the area of my interest, intelligent systems. When-->
+                        <!--I was finishing my bachelor degree I struggled with serious financial difficulties, so I took a-->
+                        <!--job that offered the highest probability of "making a lot of money". Working with SAP sounded-->
+                        <!--exactly like that, and in a way it turned out to be correct. But after quitting CT Consulting I-->
+                        <!--took a break to get back to my senses, and revise my life. By that moment I already got to my-->
+                        <!--feet and started saving up for my future plans. I revived my old robotics projects, now able to-->
+                        <!--acquire missing components, and in parallel I took a course by Northwestern University to boost-->
+                        <!--my knowledge in image processing techniques. I additionally enrolled ASU to take online courses-->
+                        <!--on systems and AI.-->
+                    <!--</p2><br/><p2>-->
+                        <!--In a meanwhile I found a part-time project at FundCount to keep making money and continue to have-->
+                        <!--development practice. I helped FundCount to build a brand new integration module for their financial-->
+                        <!--software. Along the way, I also enjoyed building a prototype to parse scanned tables reports into-->
+                        <!--Excel file using tesseract-OCR library. I established a workflow for the new development for the-->
+                        <!--future FundCount's developers and supplied my development and configuration with various materials-->
+                        <!--and documentation. I was acknowledged later that the videos with the functionality demonstration-->
+                        <!--I've created became quite popular among the sales and support teams.-->
+                    <!--</p2><br/><br/><p2>-->
+                        <!--The next project found me itself while I was still doing development for FundCount. The partner-->
+                        <!--we've been working with while I was still employed by CT Consulting invited me to work for Mentor-->
+                        <!--Graphics at a quite competitive rate, so continuing my education at ASU and working on the project-->
+                        <!--at FundCount I traveled to Wilsonville, OR, to be building APIs for Mentor Graphics for the next-->
+                        <!--4 months. Mentor Graphics liked my work and invited me again for a longer period to extend the-->
+                        <!--framework I built the first time and develop an API for heavy loads of different business entities.-->
+                    <!--</p2>-->
+                <!--</div>-->
                 <div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%">
                     <p2 style="font-size: medium; text-align: left; padding-left: 0">
-                        <tc_lightblack>5+ years</tc_lightblack> of IT experience in full
-                        <tc_lightblack>Software Development Life Cycle (SDLC)</tc_lightblack>
-                        , Requirement Gathering, Design, Development, Testing and Implementation;
+                        <tc_darkblue>7+ years</tc_darkblue> of experience in full
+                        <tc_darkblue>Software Development Life Cycle (SDLC)</tc_darkblue>
+                        , requirement gathering, design, research & development (R&D), testing and production support;
                         <br/><br/>
-                        <tc_lightblack>4+ years</tc_lightblack> of integration
-                        engineering: web services development and configuration, cloud/on-demand/hybrid <tc_lightblack>
-                        integration platforms</tc_lightblack>, <tc_lightblack>SOA</tc_lightblack>,
-                        <tc_lightblack>microservices</tc_lightblack> and <tc_lightblack>APIs</tc_lightblack> architectures;
+                        <tc_darkblue>5+ years</tc_darkblue> of integration
+                        engineering: web services development and configuration, cloud/on-demand/hybrid <tc_darkblue>
+                        integration platforms</tc_darkblue>, <tc_darkblue>SOA</tc_darkblue>,
+                        <tc_darkblue>microservices</tc_darkblue> and <tc_darkblue>APIs-led</tc_darkblue> architectures;
                         <br/><br/>
-                        <tc_lightblack>3+ years</tc_lightblack> of experience in <tc_lightblack>Salesforce</tc_lightblack>
-                        bi-directional integration: SOAP/REST APIs, custom web services development.
-                        <tc_lightblack>Apex</tc_lightblack> development;
+                        <tc_darkblue>3+ years</tc_darkblue> of experience in <tc_darkblue>Salesforce</tc_darkblue>
+                        bi-directional integration: SOAP/REST/Bulk APIs, custom Apex web services development.
+                        <tc_darkblue>Apex</tc_darkblue> development;
                         <br/><br/>
-                        Experience in <tc_lightblack>Mulesoft Anypoint</tc_lightblack> integration: RAMLs
-                        services specification, portals, flows implementation and configuration, security policy.
-                        <tc_lightblack>Java</tc_lightblack> development;
+                        <tc_darkblue>2 years</tc_darkblue> of experience in <tc_darkblue>Mulesoft Anypoint</tc_darkblue>
+                        integration: RAML specification, synchronous and scheduled applications, json-schema validation security policy.
+                        <tc_darkblue>Java/Data Weave</tc_darkblue> development;
                         <br/><br/>
-                        <tc_lightblack>2+ years</tc_lightblack> of leading <tc_lightblack>
-                        Informatica Cloud Data Integration</tc_lightblack> delivery experience.
+                        <tc_darkblue>2+ years</tc_darkblue> of leading <tc_darkblue>
+                        Informatica Cloud Data Integration</tc_darkblue> delivery experience.
                         <br/><br/>
-                        <tc_lightblack>2+ years</tc_lightblack> of experience in <tc_lightblack>
-                        SAP XI/PI/PO</tc_lightblack> (architecture design, configuration, consulting and
-                        implementation, development & support). <tc_lightblack>Java</tc_lightblack> development;
+                        <tc_darkblue>2+ years</tc_darkblue> of experience in <tc_darkblue>
+                        SAP XI/PI/PO</tc_darkblue> (architecture design, configuration, consulting and
+                        implementation, development & support). <tc_darkblue>Java</tc_darkblue>-adapters development;
                         <br/><br/>
-                        <tc_lightblack>2 years</tc_lightblack> of experience in <tc_lightblack>
-                        SAP R/3 ABAP</tc_lightblack> development;
+                        <tc_darkblue>2 years</tc_darkblue> of experience in <tc_darkblue>
+                        SAP R/3 ABAP</tc_darkblue> development;
                         <br/><br/>
-                        Experienced in working on <tc_lightblack>Agile</tc_lightblack> methodology.
+                        <tc_darkblue>3+ years</tc_darkblue> of <tc_darkblue>leadership</tc_darkblue>: team management,
+                        mentoring, code and performance review;
+                        <br/><br/>
+                        Experienced in working by Waterfall and <tc_darkblue>Agile</tc_darkblue> methodology.
                     </p2>
                     <!--</div>-->
 
@@ -222,21 +269,20 @@
 
             <!--Tab About education-->
             <div id="about_education" class="tab_about" style="display: none;">
-                <div class="column" style="text-align: center">
-                    <title_2>
-                        <a href="https://mipt.ru/english/" style="text-decoration: none">Moscow Institute of Physics and
-                            Technology (MIPT)</a>
-                    </title_2>
-                    <br/>
+                <div class="column" style="margin-left: 5%; text-align: left; padding-left:1.5%;">
                     <title_3>
-                        Applied Physics and Mathematics, BS.
+                            BS, Applied Physics and Applied Mathematics - 2013
                     </title_3>
+                    <br/>
+                    <title_4><a href="https://mipt.ru/english/" style="text-decoration: none">
+                        Moscow Institute of Physics and Technology (MIPT)
+                    </a></title_4>
                 </div>
 
-                <div class="column_40 " style="margin-left: 5%; margin-right: 5%;">
+                <div class="column_50 " style="margin-left: 5%; margin-right: 0%;">
                     <br/><br/><br/><br/>
                     <p2>
-                        <title_3>Courses</title_3>
+                        <title_3>Additional courses</title_3>
                         <ul>
                             <li>Algorithms, Part I (Princeton University – open course)</li>
                             <li>Algorithms, Part II (Princeton University – open course)</li>
@@ -244,11 +290,13 @@
                             <li>Cryptography (Stanford University – open course)</li>
                             <li>Micro controllers and organization of microprocessor systems (MIPT – extracur. course)</li>
                             <li>Paradigm of business programming and SQL (NIX on base of MIPT – extracur. course)</li>
+                            <li>Fundamentals of Digital Image and Video Processing (Northwestern University - open course)</li>
+                            <li>Practical Reinforcement Learning (NRU Higher School of Economics – open course)</li>
                         </ul>
                     </p2>
                 </div>
 
-                <div class="column_40 position_relative" style="margin-left: 5%;">
+                <div class="column_30 position_relative" style="margin-left: 0%;">
                     <br/><br/><br/><br/>
                     <p2>
                         <title_3>Certificates</title_3>
@@ -375,27 +423,27 @@
         </div>
         <br/><br/>
         <div class="section_row projects_box position_relative">
-            <a href="" class="project project_image"
-               style="background-image:url(img/Projects/rasp.jpg)">
-                <div class="project_name soon">Coming soon..</div>
-                <div class="project_description_layer">
-                    <p class="project_description">
-                        Face control and Salesforce security system on Raspberry PI<br/>
-                        <br/>
-                    </p>
-                </div>
-            </a>
+            <!--<a href="" class="project project_image"-->
+               <!--style="background-image:url(img/Projects/rasp.jpg)">-->
+                <!--<div class="project_name soon">Coming soon..</div>-->
+                <!--<div class="project_description_layer">-->
+                    <!--<p class="project_description">-->
+                        <!--Face control and Salesforce security system on Raspberry PI<br/>-->
+                        <!--<br/>-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</a>-->
 
-            <a href="" class="project project_image"
-               style="background-image:url(img/Projects/rasp2.jpg)">
-                <div class="project_name soon">Coming soon..</div>
-                <div class="project_description_layer">
-                    <p class="project_description">
-                        Control the light in the room from Salesforce on Raspberry PI<br/>
-                        <br/>
-                    </p>
-                </div>
-            </a>
+            <!--<a href="" class="project project_image"-->
+               <!--style="background-image:url(img/Projects/rasp2.jpg)">-->
+                <!--<div class="project_name soon">Coming soon..</div>-->
+                <!--<div class="project_description_layer">-->
+                    <!--<p class="project_description">-->
+                        <!--Control the light in the room from Salesforce on Raspberry PI<br/>-->
+                        <!--<br/>-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</a>-->
 
             <!--<a href="#" class="project project_image"-->
             <!--style="background-image:url(img/Dragon%20Curve%2017%20p2.png)">-->

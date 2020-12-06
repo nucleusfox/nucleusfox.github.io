@@ -144,13 +144,19 @@ title_1 {
 
 title_2 {
     font-size: 2em;
-    color: #181818;
+    color: #002f5f;
     font-family: 'Merriweather', serif;
 }
 
 title_3 {
     font-size: 1.5em;
-    color: #181818;
+    color: #002f5f;
+    font-family: 'Merriweather', serif;
+}
+
+title_4 {
+    font-size: 1.2em;
+    color: #002f5f;
     font-family: 'Merriweather', serif;
 }
 
@@ -162,7 +168,6 @@ p {
     font-weight: normal;
     left: 0;
     right: 0;
-    align: left;
 }
 
 footer {
