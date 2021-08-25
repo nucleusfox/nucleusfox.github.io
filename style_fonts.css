@@ -230,6 +230,11 @@ tc_violet {
     font-family: 'Merriweather', serif;
 }
 
+.project_name.taurus {
+    color: #320509;
+    font-family: 'Hina Mincho', serif;
+}
+
 .project_name.cvprofile {
     color: #5646c2;
     font-family: 'Merriweather', sans-serif;
