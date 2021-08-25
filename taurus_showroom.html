@@ -82,26 +82,62 @@
                             </div>
                         </div>
 
-                        <!--<div class="row spec_table_section">-->
-                            <!--<div class="cell">-->
-                                <!--Photo gallery-->
-                            <!--</div>-->
-                            <!--<div class="cell">-->
-                            <!--</div>-->
-                        <!--</div>-->
 
-                        <!--<div class="row">-->
-                            <!--<div class="cell" style="padding-top:2vw;text-align: center; display: block;">-->
-                                <!--<div class="container">-->
-                                <!--<div class="section_row projects_box position_relative">-->
-                                    <!--<img class="gallery" src="img/Projects/Taurus/pics/20200318_204525.jpg"/>-->
-                                    <!--<img class="gallery" src="img/Projects/Taurus/pics/20200318_204525.jpg"/>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="cell" style="text-align: center; vertical-align: middle;padding:2vw;">-->
+                        <div class="row spec_table_section">
+                            <div class="cell">
+                                Functional modules
+                            </div>
+                            <div class="cell">
+                            </div>
+                        </div>
 
-                            <!--</div>-->
-                        <!--</div>-->
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>Core program</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Initialise configurations from file: physical set of pis and types of manipulators,
+                                    web-services/processes to start at launch. Maintains processes queue -
+                                    received commands, link to their corresponding execution Java class, and
+                                    launches processing.</p4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>Web-service: message chat</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Chat server. Messages are broadcasted to all connected participants.</p4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>Web-service: remote commands receiver</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Receives commands and put them to the execution queue.</p4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>Web-service: remote movement control receiver</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Receives commands to control movement: forward, backward, turn left, turn right.</p4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>Web-service: video streaming</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Streams video by request. Per configuration adds face recognition rectangles.</p4>
+                            </div>
+                        </div>
 
                     </div>
 
