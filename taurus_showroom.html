@@ -96,9 +96,9 @@
                                 <p4>Core program</p4>
                             </div>
                             <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
-                                <p4>Initialises configurations from file: physical set of pis and types of manipulators,
-                                    web-services/processes to start at launch. Maintains processes queue -
-                                    received commands, link to their corresponding execution Java class, and
+                                <p4>Initialises configurations from file: set of I/O pins and types of manipulators,
+                                    web-services/processes to start at boot. Maintains processes queue -
+                                    received commands, linked to their corresponding execution Java class, and
                                     launches processing.</p4>
                             </div>
                         </div>
@@ -137,6 +137,16 @@
                             <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
                                 <p4>Streams video by request. The video feed is obtained using library OpenCV and include
                                     trained model for face recognition. Per configuration adds face recognition rectangles.</p4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>General purpose I/O pins native library</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Own native library for I/O pins control, uses Unix's FS as basis. Written on C
+                                    with Java binding.</p4>
                             </div>
                         </div>
 
