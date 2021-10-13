@@ -82,12 +82,12 @@ var PALETTE = [
     '#7709A7'
 ];
 
-var GENERATION = 10;
+var GENERATION = 14;
 var BEND_STEP = 15;
 var SIZE_COEFFICIENT = 2;
-var SPEED = 4;
+var SPEED = 10;
 var startX = width*4/7;
-var startY = height*3/7;
+var startY = height*4/7;
 var currentX = startX;
 var currentY = startY;
 var shiftX = 0;
