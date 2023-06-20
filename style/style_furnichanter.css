@@ -33,7 +33,7 @@ body {
  
 .main-nav {
   width: 85vw;
-  margin-top: 3rem;
+/*  margin-top: 0.01vw;*/
   color: white;
   display: flex;
  }
@@ -94,13 +94,13 @@ body {
   width: 85vw; /* auto; /* 1240px; */
   height: 99px;
   /* left: 240px; */
-  margin-top: 11rem;
+  margin-top: 5rem;
   /* top: 250px; */
 
   font-family: 'Artifika';
   font-style: normal;
   font-weight: 400;
-  font-size: 120px;
+  font-size: 90px;
   line-height: 110px;
 
   color: #FFFFFF;
@@ -115,13 +115,13 @@ body {
   width:  85vw; /* auto; /* 1481px; */
   height: 125px;
   /* left: 240px; */
-  margin-top: 23rem;
+  margin-top: 14rem;
   /* top: 520px; */
 
   font-family: 'Artifika';
   font-style: normal;
   font-weight: 400;
-  font-size: 65px;
+  font-size: 54px;
   line-height: 80px;
 
   color: #FFFFFF;
@@ -135,10 +135,10 @@ body {
 
 .button-signup {
   /*position: absolute;*/
-  width: 212px;
-  height: 80px;
+  width: 200px;
+  height: 70px;
   left: 7.5vw; /*162px;*/
-  margin-top: 31rem;
+  margin-top: 28rem;
   /* top: 503px; */
   
   border: none;
