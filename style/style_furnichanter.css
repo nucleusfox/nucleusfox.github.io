@@ -1,23 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Artifika:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Glory:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Belanosima:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ysabeau+Infant:400,500,700');
+
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
-  background-color: ffffff;
+  background-color: #ffffff;
   font-family: Artifika, sans-serif;
   font-size: 1.2em;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }
 
+.container {
+   max-width: 85vw; /*1200px;*/
+   margin: 0 auto;
+   padding: 0 20px; 
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    min-height: 1080px;
+}
+
+
+
+/*
 .full-height-grow {
   display: flex;
   flex-direction: column;
-}
+} */
 
+/* Logo */
 .brand-logo {
   display: flex;
   align-items: center;
@@ -30,71 +54,77 @@ body {
   margin-left: 1rem;
   color: white;
  }
- 
+
+
+
+
+
+/* Main Nav */
 .main-nav {
-  width: 85vw;
-/*  margin-top: 0.01vw;*/
+  position: fixed;
+  padding-left: 6vw;
+  padding-top: 2vw;
+  width: 95vw;
+  /*margin: auto;*/
+  margin-top: 0.01vw;
+
   color: white;
   display: flex;
+  min-height: 2rem;
  }
  
- .main-nav ul {
+.main-nav ul {
    margin-left: auto;
    display: flex;
    /* margin: 0; */
-   padding: 0;
    list-style: none;
    align-items: center;
+ }
+ 
+ .main-nav li {
+   padding: 1rem 1rem 1rem 3rem;
  }
  
  .main-nav a {
    color: inherit;
    text-decoration: none;
-   padding: 1rem;
+   padding: 1rem 1rem 1rem 1rem;
  }
  
  .main-nav a:hover {
    color: #adadad;
  }
  
- .container {
-   max-width: 85vw; /*1200px;*/
-   margin: 0 auto;
-   padding: 0 20px; 
- }
- .main-header {
+ 
+ 
+
+  
+.main-header {
    display: flex;
    /* justify-content: space-between; */
    align-items: center;
    height: 1rem;
  }
  
- 
- 
- /* background */
- .landing-page {
-  background-image: url('../img/furnichanter/background.png');
-  /*position: absolute;
-  width: 1545px;
-  height: 2000px;
-  left: 2000px;
-  top: 0px;*/
-  
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+.section-main {
+  width: 95vw;
+  padding-left: 4vw;
+  padding-top: 4.7vw;
+  margin: auto;
 }
+
  
- 
- 
+/************************************************************************/
+/*	TEXT								*/
+/************************************************************************/
  /* Create as you speak */
  
  .title {
   position: absolute;
-  width: 85vw; /* auto; /* 1240px; */
-  height: 99px;
+  /*width: 85vw; /* auto; /* 1240px; */
+  /* height: 99px; */
   /* left: 240px; */
-  margin-top: 7rem;
+  margin-top: 10.7rem;
   /* top: 250px; */
 
   font-family: 'Artifika';
@@ -112,10 +142,10 @@ body {
 
 .subtitle {
   position: absolute;
-  width:  85vw; /* auto; /* 1481px; */
-  height: 125px;
+  /* width:  85vw; /* auto; /* 1481px; */
+  /* height: 125px; */
   /* left: 240px; */
-  margin-top: 16rem;
+  margin-top: 20rem;
   /* top: 520px; */
 
   font-family: 'Artifika';
@@ -131,6 +161,50 @@ body {
 }
 
 
+.text-ai-left p{
+/*position: absolute; */
+width: 65vw;
+height: 100px;
+/*left: 107px;
+top: 70px;*/
+
+font-family: 'Glory';
+font-style: normal;
+font-weight: 400;
+font-size: 1.2em;
+line-height: 30px;
+display: flex;
+color: #000000;
+}
+
+.text-ai-right p{
+/*position: absolute; */
+  width: 817px;
+  height: 100px;
+  left: 1012px;
+  top: 862px;
+
+  font-family: 'Glory';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 30px;
+  text-align: right;
+display: flex;
+  color: #000000;
+  
+  align-items:center;
+  text-align: right;
+}
+
+/********************************/
+
+
+
+
+
+
+
 /* Sign up */
 
 .button-signup {
@@ -142,38 +216,254 @@ body {
   /* top: 503px; */
   
   border: none;
-  background-color: #0AB010;
+  background-color: #0AB010; /* lighter: ##25b82a */
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   border-radius: 5px;
 
   /* align-items: center; */
   
 
-  text-align: center; /*
-  text-decoration: none;
-  display: inline-block;*/
+  text-align: center; 
+/*  text-decoration: none; */
+/*  display: inline-block;*/
 
 }
+
+.button-signup:hover {
+  background-color: #25b82a;
+/*  text-decoration: none; */
+}
+
 .button-signup-text {
-/*position: absolute; */
 /* width: 212px;
 height: 80px; */
-/* left: calc(50% - 212px/2 - 692px);
-top: calc(50% - 80px/2 + 3px); */
 
 
-font-family: 'Artifika';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 37px;
+
+  font-family: 'Artifika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
 /* display: flex; */
-align-items: center;
-text-align: center;
+  align-items: center;
+  text-align: center;
 
 color: #FFFFFF;
 
   text-align: center;
-  /*text-decoration: none;
-  display: inline-block;*/
+  text-decoration: none;
+  /*display: inline-block; */
+  
+  /*text-decoration: none;*/
+}
+
+.button-nav {
+  color: inherit;
+  text-decoration: none;
+  /*padding: 1rem;*/
+}
+ 
+.button-nav:hover {
+  color: #adadad;
+  text-decoration: none;
+}
+
+
+
+ 
+.section-about {
+  width: 95vw;
+  padding-left: 4vw;
+  padding-top: 0vw;
+  margin: auto;
+}
+
+.container-scroll {
+  overflow: auto;
+  white-space: nowrap;
+  align-items: center;
+  padding: 50px 0px 0px 10px;
+  
+/*  height*/
+}
+
+
+.container-scroll img {
+  background-color: #ffffff;
+  height: 400px;
+  width: auto;
+  padding: 10px;
+  background: white;
+  border-radius: 14px;
+  margin: 150px 30px 50px 50px;
+  
+  filter: drop-shadow(0.2rem 0.4rem 0.95rem grey);
+}
+ 
+ 
+
+/* landing page - background */
+.page-landing {
+  /*width: 85vw;*/
+/*  margin: auto;*/
+  background-image: url('../img/furnichanter/background.png');
+  /*position: absolute;
+  width: 1545px;
+  height: 2000px;
+  left: 2000px;
+  top: 0px;*/
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 120rem 70rem;
+}
+
+/* background */
+.page-about {
+  /*width: 85vw;*/
+/*  margin: auto;*/
+/*  background-image: url('../img/furnichanter/background.png');*/
+  /*position: absolute;
+  width: 1545px;
+  height: 2000px;
+  left: 2000px;
+  top: 0px;*/
+  
+/*  background-repeat: no-repeat;
+  background-attachment: fixed; */
+/*  background-size: 120rem 60rem; */
+  
+  background: /* radial-gradient(95.28% 99.49% at 38.36% 34.72%, #343154 0%, rgba(47, 44, 81, 0) 100%) */
+    linear-gradient(127deg, rgba(118, 118, 176, .2), rgba(118, 118, 176, 0) 100%),
+    linear-gradient(336deg, rgba(69, 32 , 32, .2), rgba(69, 32 , 32, 0) 100%);
+}
+
+
+/************************************************************************/
+/*	CONTACT	FORM							*/
+/************************************************************************/
+
+/* background */
+.page-contact {
+  background-image: url('../img/furnichanter/contact/wood3.jpg');
+  background-repeat: no-repeat;
+  background-size: 150rem 100rem;
+  background-attachment: fixed;
+  
+  /*background:
+    linear-gradient(127deg, rgba(25, 49, 78, .6), rgba(25, 49, 78, 0) 100%),
+    linear-gradient(336deg, rgba(14, 10 , 12, .6), rgba(39, 24 , 32, 0.1) 100%); */
+/*    linear-gradient(336deg, rgba(39, 24 , 32, .8), rgba(39, 24 , 32, 0.1) 100%);*/
+  /*box-shadow: 0px 0px -3px -5px black;*/
+}
+
+.form-contact {
+  /*position: absolute;*/
+  /*width: 142px;
+  height: 32px;
+  left: 1293px;
+  top: 42px;*/
+
+  font-family: 'Ysabeau Infant', sans-serif; /*'Artifika';*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 37px;
+
+  color: #FFFFFF; 
+
+  
+  padding-top: 1.8em;
+	/*padding:40px;
+	margin: 50px auto;*/
+
+  
+
+  text-align: center;
+  position:relative;
+/*background-color:#000000; */  
+  width: 50rem;
+  height: 46rem;
+  top:60%;
+  left:50%;
+  transform:translate(-50%,-60%);
+  border-radius: 15px;
+  filter: drop-shadow(0.0rem 0.0rem 0.95rem black);
+  backdrop-filter: blur(10px);
+  
+  box-shadow: inset 0 0 50px rgba(255, 255, 255, .2);
+}
+
+.form-contact-frost {
+  width: 50rem;
+  height: 46rem;
+  position:relative;
+  top:60%;
+  left:50%;
+  transform:translate(-50%,-60%);
+
+  border-radius: 15px;
+
+  box-shadow: inset 0 0 8px rgba(255, 255, 255, .4);
+}
+
+
+/****************/
+form {
+  
+}
+
+
+form label{
+  display: inline-block;
+  width: 35rem;
+  min-width: 12rem;
+  min-height: 2rem;
+  
+  text-align: left;
+  border-radius: 4px;
+  border: none;
+  padding-top: 0.6em;
+  
+  font-size: .9em;
+}
+
+form .input{
+  width: 35rem;
+  min-width: 12rem;
+  min-height: 2.5rem;
+
+  font-style:italic;
+
+/*  background-color: */
+  background-color: transparent;
+  box-shadow: inset 0 0 150px rgba(255, 255, 255, .3);
+  
+    
+/*  backdrop-filter: blur(10px);*/
+/*  background-color: rgba(255, 255, 255, .7); */
+/*  backdrop-filter: blur(10px); */
+  border-radius: 4px;
+  border: none;
+  text-align: left;
+  padding-left: 8px;
+
+}
+
+
+form .submit{
+  width: 15rem;
+  min-width: 12rem;
+  min-height: 2.7rem;
+  
+/*  background-color: rgba(255, 255, 255, .7);*/
+  background-color: transparent;
+  /*backdrop-filter: blur(10px);*/
+  box-shadow: inset 0 0 150px rgba(255, 255, 255, .7);
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  
+  /*padding-left: 8px;*/
 }
