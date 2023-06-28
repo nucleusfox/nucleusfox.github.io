@@ -35,7 +35,7 @@ body {
 
 .page-extended {
     width: 100vw;
-    height: 130vh;
+    height: 140vh;
     min-height: 1080px; /*1620px;*/
 }
 
@@ -128,7 +128,7 @@ body {
  /* Create as you speak */
  
  .title {
-  position: absolute;
+  position: relative;
   /*width: 85vw; /* auto; /* 1240px; */
   /* height: 99px; */
   /* left: 240px; */
@@ -138,29 +138,36 @@ body {
   font-family: 'Artifika';
   font-style: normal;
   font-weight: 400;
-  font-size: 90px;
-  line-height: 110px;
+  font-size: 7rem; /* 	90px; */
+  line-height: 8rem; /*110px;*/
 
   color: #FFFFFF;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  }
  
+ 
+ @media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+ 
  /* AI-powered Descriptive Furniture Design */
 
 .subtitle {
-  position: absolute;
+  position: relative;
   /* width:  85vw; /* auto; /* 1481px; */
   /* height: 125px; */
   /* left: 240px; */
-  margin-top: 20rem;
+  margin-top: 2rem;
   /* top: 520px; */
 
   font-family: 'Artifika';
   font-style: normal;
   font-weight: 400;
-  font-size: 54px;
-  line-height: 80px;
+  font-size: 3.4rem; /* 54px; */
+  line-height: 4rem; /*80px;*/
 
   color: #FFFFFF;
 
@@ -170,19 +177,19 @@ body {
 
 
 .text-ai-left p{
-/*position: absolute; */
-width: 65vw;
-height: 100px;
+  /*position: absolute; */
+  width: 65vw;
+  height: 100px;
 /*left: 107px;
 top: 70px;*/
 
-font-family: 'Glory';
-font-style: normal;
-font-weight: 400;
-font-size: 1.2em;
-line-height: 30px;
-display: flex;
-color: #000000;
+  font-family: 'Glory';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5rem;
+  display: flex;
+  color: #000000;
 }
 
 .text-ai-right p{
@@ -196,9 +203,9 @@ color: #000000;
   font-style: normal;
   font-weight: 400;
   font-size: 1.2em;
-  line-height: 30px;
+  line-height: 1.5rem;
   text-align: right;
-display: flex;
+  display: flex;
   color: #000000;
   
   align-items:center;
@@ -216,11 +223,11 @@ display: flex;
 /* Sign up */
 
 .button-signup {
-  /*position: absolute;*/
+/*  position: relative;*/
   width: 200px;
   height: 70px;
   left: 7.5vw; /*162px;*/
-  margin-top: 28rem;
+  margin-top: 7rem; /*28rem;*/
   /* top: 503px; */
   
   border: none;
@@ -394,9 +401,9 @@ color: #FFFFFF;
 /*background-color:#000000; */  
   width: 50rem;
   height: 46rem;
-  top:60%;
+  top:65%;
   left:50%;
-  transform:translate(-50%,-60%);
+  transform:translate(-50%,-65%);
   border-radius: 15px;
   filter: drop-shadow(0.0rem 0.0rem 0.95rem black);
   backdrop-filter: blur(10px);
