@@ -1,9 +1,762 @@
 <!DOCTYPE html>
+<!--
+    So, you found me! Hello and welcome!
+
+    I'm glad to know that you are interested with my little work here.
+
+    I'm not a exactly a front-end developer so you will definitely find below a lot of code used inefficiently. I just wanted to
+    make this page a little more neater and nicer and I'm happy to learn more if you have an advice.
+
+    Also I want to say thank you to Alex Wendland for the article (https://blog.alexwendland.com/2015/particle-network-js-animations/)
+    that helped me to set up the animated background without becoming an expert in JS. I really appreciate people who
+    share their results and let others learn on their experience - these are great people doing a great work.
+    So if you meet Alex, remember to say hello and thank you on my behalf me.
+
+    Enjoy!
+    Jane.
+-->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hi! It's me!</title>
-    <h1>Hello and Welcome!</h1>
-    <p>This is me.</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|IM+Fell+English+SC|Kaushan+Script|Noticia+Text|Noto+Serif|Old+Standard+TT|Song+Myung" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">-->
+    <link rel="stylesheet" href="style/style_background.css">
+    <link rel="stylesheet" href="style/style_fonts.css">
+    <link rel="stylesheet" href="style/style_grid.css">
+    <link rel="stylesheet" href="style/style_navigation.css">
+    <link rel="stylesheet" href="style/style_decoration.css">
+    <link rel="shortcut icon" type="image/png" href="img/J%20shadowed%202.png"/>
+    <title>Jane Ivanova</title>
+    <script src="scripts/navigation.js"></script>
+    <!-- <script src="scripts/web_dots.js"></script> -->
+    <script src="scripts/video.js"></script>
 </head>
-<body>
+<body class="background">
+<!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(70211449, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/70211449" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!--Introduction-->
+    <div class="section_row page container borderless position_relative">
+        <div>
+            <canvas id="canvas_web_dots" class="borderless content" style="height: 100%"></canvas>
+            <script src="scripts/web_dots.js"></script>
+            <!--<script src="scripts/dragon.js"></script>-->
+        </div>
+
+        <div class="position_absolute column_42 borderless left_20 top_desc">
+            <div class="landing-page">
+                <title_1><title_0 style="text-shadow: 3px 2px 4px #becdd3;"><tc_magenta>J</tc_magenta></title_0>ane Ivanova</title_1>
+                <br/>
+                <title_2>AI geek</title_2>
+                <br/><br/>
+
+                <p>
+                    I'm robotics/AI full-stack engineer with leading experience in integration software development.
+                </p>
+
+                <br/>
+                
+                <p>
+                    Hire Me ! Send job descriptions here -> <tc_blue>jane.ivanova.work(at)gmail.com </tc_blue>
+                </p>
+
+                
+                <br/><br/><br/><br/>
+                <footer class="drop-shadow">
+                    <a href="mailto:jane.ivanova.work@gmail.com?subject=I've got something interesting">Reach out to me: &nbsp; jane.ivanova.work at gmail.com</a>
+                    <!--Reach out to me: &nbsp; jane.ivanova.work@gmail.com-->
+                    &nbsp; / &nbsp;
+                    <a href="#contacts" onclick="moveToSection('contacts')">Contacts</a>
+                    &nbsp; / &nbsp;
+                    <a href="#about_me_tabs" onclick="moveToSection('about_me_tabs')">More</a>
+                </footer>
+
+            </div>
+
+        </div>
+
+        <div class="position_absolute column_35 borderless top_spec_desc right_spec_desc">
+            <div class="content align_text_center" style="height: 100%">
+                <br/>
+            </div>
+        </div>
+
+    </div> <!--Introduction-->
+
+    <div id="arrowAnim" style="z-index: -1">
+        <div class="arrowSliding">
+            <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay1">
+            <div class="arrow"></div>
+        </div>
+        <div class="arrowSliding delay2">
+            <div class="arrow"></div>
+        </div>
+    </div>
+
+    <!--About me tabs-->
+    <div id="about_me_tabs" class="page section_row">
+        <div class="section_row position_relative top_desc" style="width: 100%;">
+            <div class="tab_bar">
+                <button class="tab_bar_button tab_bar_button_active drop-shadow" onclick="openAbout(event, 'about_experience')">Experience</button> &nbsp; &nbsp; &nbsp;
+                <button class="tab_bar_button" onclick="openAbout(event, 'about_skills')">Skills</button> &nbsp; &nbsp; &nbsp;
+                <button class="tab_bar_button" onclick="openAbout(event, 'about_education')">Education</button> &nbsp; &nbsp; &nbsp;
+                <!--<button class="tab_bar_button" onclick="openAbout(event, 'dream_position')">Dream position</button> &nbsp; &nbsp; &nbsp;-->
+                <a href="#projects" onclick="moveToSection('projects')"><button class="tab_bar_button">Projects</button></a> &nbsp; &nbsp; &nbsp;
+            </div>
+
+            <!--Tab About skills-->
+            <div id="about_skills" class="tab_about" style="display: none">
+                <div class="column_45 position_relative" style="margin-left: 5%; margin-right: 0%">
+                    <p2 class="borderless">
+                    <table class="borderless" style="width:100%;">
+                        <tr>
+                            <td class="td_left_30">Robots :</td>
+                            <td class="td_right"><tc_darkblue>Universal Robots UR10</tc_darkblue>, <tc_darkblue>Fairino FR10</tc_darkblue>,
+                                <tc_darkblue>Unitree Go1</tc_darkblue>, Mavic DJI Mini
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left_30">Hardware :</td>
+                            <td class="td_right"><tc_darkblue>NVIDIA Jetson Orin</tc_darkblue>, <tc_darkblue>Intel NUC</tc_darkblue>,
+                                <tc_darkblue>RealSense D435i</tc_darkblue>, <tc_darkblue>Zed</tc_darkblue>, OptiTrack Motion Capture,
+                                <tc_darkblue>GPS</tc_darkblue>, GNSS Antennas, <tc_darkblue>IMU</tc_darkblue>,
+                                <br/>LiDAR, laser distance sensors,
+                                <br/>Raspberry Pi, Arduino
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left_30">Robot Software :</td>
+                            <td class="td_right">
+                                <tc_darkblue>ROS2</tc_darkblue>, ROS1,
+                                <br/>Gazebo, rViz, rQT, URDF, XACRO, MuJoCo,
+                                <br/><tc_darkblue>Nav stack</tc_darkblue>, obstacle avoidance, MoveIt, MoveIt PRO,
+                                <br/>Behavior trees, Finite State Machines, waypoint navigation and decision-making with human interruptions,
+                                <br/><tc_darkblue>OpenCV</tc_darkblue>, <tc_darkblue>CUDA</tc_darkblue>,
+                                <br/>DJI Flight Planner
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left_30">AI/ML :</td>
+                            <td class="td_right">
+                                <tc_darkblue>LLMs</tc_darkblue>, <tc_darkblue>fine-tuning</tc_darkblue>, <tc_darkblue>visual-language action</tc_darkblue> models,
+                                <tc_darkblue>prompt engineering</tc_darkblue>, <tc_darkblue>RAG</tc_darkblue>, <tc_darkblue>LLM-based</tc_darkblue> applications,
+                                <br/>classification, regression, <tc_darkblue>object detection</tc_darkblue>, <tc_darkblue>tracking</tc_darkblue>, edge detection,
+                                <br/><tc_darkblue>fiducial markers</tc_darkblue> design and detection
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    </p2>
+                </div>
+
+                <div class="column_45 position_relative" style="margin-left: 0%; margin-right: 5%">
+                    <p2 class="borderless">
+                    <table class="borderless" style="width:100%;">
+                        <tr>
+                            <td class="td_left_30">Integrated big cool systems :</td>
+                            <td class="td_right"><tc_darkblue>AWS S3</tc_darkblue>, <tc_darkblue>Google Drive</tc_darkblue>, <tc_darkblue>Google Gemini</tc_darkblue>,
+                                <tc_darkblue>Salesforce</tc_darkblue> (SOAP/REST/Bulk APIs, Apex-services),
+                                <tc_darkblue>Kafka Streams</tc_darkblue>, Time-series database <tc_darkblue>InfluxDB</tc_darkblue>, Redfish API,
+                                <tc_darkblue>SAP CRM/ERP/BW</tc_darkblue>, Yandex-API,
+                                <tc_darkblue>Microsoft SQL Server</tc_darkblue>, Oracle Database, MySQL</td>
+                        </tr>
+                        <tr>
+                            <td class="td_left_30">Integration Platforms :</td>
+                            <td class="td_right">Anypoint Mulesoft, Informatica Cloud, Zapier, SAP XI/PI/PO, SAP HCI</td>
+                        </tr>
+                        <tr>
+                            <td class="td_left_30">Programming languages :</td>
+                            <td class="td_right">
+                                <tc_darkblue>Python (proficient)</tc_darkblue>
+                                <br/>bash script (ninja level)
+                                <br/>C/C++ (proficient)
+                                <br/><tc_darkblue>Java (certificated!)</tc_darkblue>
+                                <br/>React (middle)
+                                <br/>NodeJS (middle)
+                                <br/>JavaScript (middle)
+                                <br/>Salesforce Apex (middle)
+                                <br/>SAP ABAP (previous experience)
+                                <br/>PL/SQL (some experience)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_left_30">Protocols and technologies :</td>
+                            <td class="td_right">
+                                HTTP/HTTPS, TCP/IP, UDP, SSH,
+                                SOAP/REST (XML/JSON), SSL/TLS, FTP/SFTP,
+                                NFS, ODBC/JDBC, SAP ABAP-proxy, SAP RFC BAPI</td>
+                        </tr>
+                        <tr>
+                            <td class="td_left_30">DB schema administration:</td>
+                            <td class="td_right">
+                                <tc_darkblue>Microsoft SQL Server</tc_darkblue>,
+                                MySQL,
+                                <tc_darkblue>Oracle Database</tc_darkblue></td>
+                        </tr>
+                        <tr>
+                            <td class="td_left_30">OS (user) :</td>
+                            <td class="td_right">Ubuntu, Arch Linux</td>
+                        </tr>
+                        <tr>
+                            <td class="td_left_30">VCS :</td>
+                            <td class="td_right">GitHub, <tc_darkblue>GitLab</tc_darkblue>, BitBucket</td>
+                        </tr>
+                    </table>
+                    </p2>
+                </div>
+            </div> <!--Tab About skills-->
+
+            <!--Tab About experience-->
+            <div id="about_experience" class="tab_about">
+                <!-- <div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%;">
+                    <div style="vertical-align: middle">
+                        <img src="img/Index/Work%20Experience.png" width="123%"/>
+                    </div>
+                </div> -->
+                <!--<div class="column_40 position_relative" style="margin-left: 5%; margin-right: 5%; text-align: justify;">-->
+                    <!--<p2>-->
+                        <!--For the 5 years and a bit more I worked as an IT consultant in SAP development and its integration-->
+                        <!--at Masterdata and later in CT Consulting. After 2 years of service in capacity of SAP ABAP developer-->
+                        <!--I moved to integration  and started my journey over miriad of systems, platforms and technologies.-->
+                        <!--Primarily I has been integrating SAP CRM (customer relationship management) with Salesforce, but-->
+                        <!--often with many other systems of a client's landscape, like databases, files storage and other-->
+                        <!--web-servies.-->
+                    <!--</p2><br/><p2> Among interesting projects I developed a direct integration between SAP ERP and-->
+                        <!--Salesforce over its enterprise SOAP API to relay the set of business objects in a form of a-->
+                        <!--typical SAP proxy plus a service to regenerate this proxy if the objects' structure is changed-->
+                        <!--in the Salesforce system. The task was not trivial as it required a lot of adaptation of modern-->
+                        <!--techniques used by Salesforce for the outdated SAP, but it was very interesting for me to overcome-->
+                        <!--all of these obstacles and finally make it work.-->
+                    <!--</p2><br/><p2>-->
+                        <!--In order to help the company to develop the integration department I was working in, I researched-->
+                        <!--several platforms from the top of the Magic Quadrant for enterprise integration platforms (iPaaS).-->
+                        <!--I convinced my bosses that we can improve our integration solutions, and that some platform choices-->
+                        <!--could perform better in certain cases. This way I became a lead the new practice of cloud integration.-->
+                        <!--I mastered the most commonly used platforms, Informatica and MuleSoft, got certified in both,-->
+                        <!--successfully implemented several projects and consequently got a team to lead international projects-->
+                        <!--with cloud integration.-->
+                    <!--</p2><br/><br/><p2>-->
+                        <!--I was often sent to the client's site to gather requirements from the first hand of client's business-->
+                        <!--users and to work closely with their technical teams. I visited Spain, France, India, Mexico, USA and-->
+                        <!--taking advantage of transit trips also some other European countries. But the downside of such-->
+                        <!--development in my career was that it consumed all of my private time - by the off-hours flights, travels-->
+                        <!--organisation and team building with our foreign colleagues. At some moment I felt that my work at-->
+                        <!--CT Consulting reached the point when I gave my work all my time and soul and had nothing left for myself,-->
+                        <!--neither I got a compensation for extra responsibilities I gained during the course of my work.-->
+                    <!--</p2><br/><br/><p2>-->
+                        <!--Around a year and a half ago I become a contractor to control which projects to take and their-->
+                        <!--traveling needs, as well as I wanted to focus on the area of my interest, intelligent systems. When-->
+                        <!--I was finishing my bachelor degree I struggled with serious financial difficulties, so I took a-->
+                        <!--job that offered the highest probability of "making a lot of money". Working with SAP sounded-->
+                        <!--exactly like that, and in a way it turned out to be correct. But after quitting CT Consulting I-->
+                        <!--took a break to get back to my senses, and revise my life. By that moment I already got to my-->
+                        <!--feet and started saving up for my future plans. I revived my old robotics projects, now able to-->
+                        <!--acquire missing components, and in parallel I took a course by Northwestern University to boost-->
+                        <!--my knowledge in image processing techniques. I additionally enrolled ASU to take online courses-->
+                        <!--on systems and AI.-->
+                    <!--</p2><br/><p2>-->
+                        <!--In a meanwhile I found a part-time project at FundCount to keep making money and continue to have-->
+                        <!--development practice. I helped FundCount to build a brand new integration module for their financial-->
+                        <!--software. Along the way, I also enjoyed building a prototype to parse scanned tables reports into-->
+                        <!--Excel file using tesseract-OCR library. I established a workflow for the new development for the-->
+                        <!--future FundCount's developers and supplied my development and configuration with various materials-->
+                        <!--and documentation. I was acknowledged later that the videos with the functionality demonstration-->
+                        <!--I've created became quite popular among the sales and support teams.-->
+                    <!--</p2><br/><br/><p2>-->
+                        <!--The next project found me itself while I was still doing development for FundCount. The partner-->
+                        <!--we've been working with while I was still employed by CT Consulting invited me to work for Mentor-->
+                        <!--Graphics at a quite competitive rate, so continuing my education at ASU and working on the project-->
+                        <!--at FundCount I traveled to Wilsonville, OR, to be building APIs for Mentor Graphics for the next-->
+                        <!--4 months. Mentor Graphics liked my work and invited me again for a longer period to extend the-->
+                        <!--framework I built the first time and develop an API for heavy loads of different business entities.-->
+                    <!--</p2>-->
+                <!--</div>-->
+
+                
+
+                <!-- <div class="column_50 position_relative" style="margin-left: 15%; margin-right: 25%"> -->
+                <div class="position_relative column_42 borderless left_20 ">
+                    <p2 style="font-size: medium; text-align: left; padding-left: 0">
+                        <tc_darkblue>10+ years</tc_darkblue> of experience in full
+                        <tc_darkblue>Software Development Life Cycle (SDLC)</tc_darkblue>
+                        , requirement gathering, design, research & development (R&D), testing and production support;
+                        <br/><br/>
+                        <tc_darkblue>1+ year</tc_darkblue> of tinkering with language models: <tc_darkblue>fine-tuning LLMs</tc_darkblue>, <tc_darkblue>visual-language action</tc_darkblue> models,
+                        <br/><br/>
+                        <tc_darkblue>3+ years</tc_darkblue> of robotics engineering: <tc_darkblue>perception</tc_darkblue>, <tc_darkblue>sensor fusion</tc_darkblue>,
+                        <tc_darkblue>computer vision</tc_darkblue>, <tc_darkblue>localization</tc_darkblue>, <tc_darkblue>navigation</tc_darkblue>, <tc_darkblue>locomotion</tc_darkblue>
+                        <br/><br/>
+                        <tc_darkblue>5+ years</tc_darkblue> of integration
+                        engineering: web services development and configuration, cloud/on-demand/hybrid <tc_darkblue>
+                        integration platforms</tc_darkblue>, <tc_darkblue>SOA</tc_darkblue>,
+                        <tc_darkblue>microservices</tc_darkblue> and <tc_darkblue>APIs-led</tc_darkblue> architectures;
+                        <br/><br/>
+                        <tc_darkblue>3+ years</tc_darkblue> of experience in <tc_darkblue>Salesforce</tc_darkblue>
+                        bi-directional integration: SOAP/REST/Bulk APIs, custom Apex web services development.
+                        <tc_darkblue>Apex</tc_darkblue> development;
+                        <br/><br/>
+                        <tc_darkblue>2 years</tc_darkblue> of experience in <tc_darkblue>Mulesoft Anypoint</tc_darkblue>
+                        integration: RAML specification, synchronous and scheduled applications, json-schema validation security policy.
+                        <tc_darkblue>Java/Data Weave</tc_darkblue> development;
+                        <br/><br/>
+                        <tc_darkblue>2+ years</tc_darkblue> of leading <tc_darkblue>
+                        Informatica Cloud Data Integration</tc_darkblue> delivery experience.
+                        <br/><br/>
+                        <tc_darkblue>2+ years</tc_darkblue> of experience in <tc_darkblue>
+                        SAP XI/PI/PO</tc_darkblue> (architecture design, configuration, consulting and
+                        implementation, development & support). <tc_darkblue>Java</tc_darkblue>-adapters development;
+                        <br/><br/>
+                        <tc_darkblue>2 years</tc_darkblue> of experience in <tc_darkblue>
+                        SAP R/3 ABAP</tc_darkblue> development;
+                        <br/><br/>
+                        🏆 <tc_darkblue>3+ years</tc_darkblue> of <tc_darkblue>leadership</tc_darkblue>: team management,
+                        mentoring, code and performance review;
+                        <br/><br/>
+                        Experienced in working by Waterfall and <tc_darkblue>Agile</tc_darkblue> methodology.
+                    </p2>
+                    <!--</div>-->
+
+                </div>
+            </div> <!--Tab About experience-->
+
+            <!--Tab About education-->
+            <div id="about_education" class="tab_about" style="display: none;">
+                <div class="column" style="margin-left: 5%; text-align: left; padding-left:1.5%;">
+                    <title_3>
+                            MS, Electrical and Computer Engineering - 2023
+                    </title_3>
+                    <br/>
+                    <title_4><a href="https://ece.gatech.edu/" style="text-decoration: none">
+                        Georgia Institute of Technology (GaTech)
+                    </a></title_4>
+                    <br/>
+                    <br/>
+                    <title_3>
+                            MS, Computer Science - (took several graduate classes in AI) <!-- dropped out after being unsatisfied with the quality of classes -->
+                    </title_3>
+                    <br/>
+                    <title_4><a href="https://ece.gatech.edu/" style="text-decoration: none">
+                        Arizona State University
+                    </a></title_4>
+                    <br/>
+                    <br/>
+                    <title_3>
+                            BS, Applied Physics and Applied Mathematics - 2013
+                    </title_3>
+                    <br/>
+                    <title_4><a href="https://mipt.ru/english/" style="text-decoration: none">
+                        Moscow Institute of Physics and Technology (MIPT)
+                    </a></title_4>
+                </div>
+
+                <div class="column_45" style="margin-left: 5%; margin-right: 0%;">
+                    <br/><br/><br/><br/>
+                    <p2>
+                        <title_3>Additional courses</title_3>
+                        <ul>
+                            <li><a href="https://www.coursera.org/learn/algorithms-part1" target="_blank">Algorithms, Part I (Princeton University – open course)</a></li>
+                            <li><a href="https://www.coursera.org/learn/algorithms-part2" target="_blank">Algorithms, Part II (Princeton University – open course)</a></li>
+                            <li><a href="https://www.coursera.org/learn/cs-algorithms-theory-machines" target="_blank">Computer Science: Algorithms, Theory, and Machines (Princeton University – open course)</a></li>
+                            <li><a href="https://www.coursera.org/learn/crypto" target="_blank">Cryptography I (Stanford University – open course)</a></li>
+                            <li>Micro controllers and organization of microprocessor systems (MIPT – extracur. course)</li>
+                            <li>Paradigm of business programming and SQL (NIX on base of MIPT – extracur. course)</li>
+                            <li>Practical Reinforcement Learning (NRU Higher School of Economics – open course)</li>
+                        </ul>
+                    </p2>
+                </div>
+
+                <div class="column_30 position_relative" style="margin-left: 0%;">
+                    <br/><br/><br/><br/>
+                    <p2>
+                        <title_3>Certificates</title_3>
+                        <ul>
+                            <li>Generative AI with Large Language Models (Amazon Web Services, DeepLearningAI)</li>
+                            <li><a href="https://coursera.org/share/78739218f76c139d5d0ba5118c555e5d" target="_blank">Fundamentals of Digital Image and Video Processing (Northwestern University)</a></li>
+                            <li>Mulesoft Certified Developer - Level 1 (Mule 4)</li>
+                            <li><a href="https://www.credly.com/badges/c087a911-7733-455b-a4e8-f788bdd40e3f/linked_in_profile" target="_blank"></a>Java SE 7 Programmer: Oracle Certified Professional</a></li>
+                            <li><a href="https://www.credly.com/badges/8fa59334-4ed9-43eb-9dc0-3207980e7a42/linked_in_profile" target="_blank">Java SE 7 Programmer: Oracle Certified Associate</a></li>
+                            <li>Informatica Cloud Data Integration Specialist</li>
+                            <li>Informatica Cloud Data Management Specialist </li>
+                            <li>SAP Sustainability and Business Innovation</li>
+                            <li>Rapid Deployment of SAP Solutions</li>
+                        </ul>
+                    </p2>
+                </div>
+
+            </div> <!--Tab About education-->
+            <!--Dream position-->
+            <div id="dream_position" class="tab_about" style="display: none; text-align: center">
+                <div class="column_30 " style="margin-left: 20%; margin-right: 3%;">
+                    <br/>
+                    <p2>
+                        I'm looking for a job with:
+                    </p2>
+                    <br/><br/><br/>
+
+                    <p2>
+                        <title_3>Industry / area of work</title_3>
+                        <ul>
+                            <li>Distributed systems network</li>
+                            <li>Network development on Unix systems</li>
+                            <li>Smart devices (communication)</li>
+                        </ul>
+                    </p2>
+
+                    <p2>
+                        <title_3>Responsibilities</title_3>
+                        <ul>
+                            <li>Analysis of business/functional requirements</li>
+                            <li>Design technical solution (class hierarchy, sequence diagrams)</li>
+                            <li>Plan and lead development activities</li>
+                            <li>Back-end development for client / server – side applications</li>
+                            <li>Maintain code versioning in collaboration with other developers (git/other)</li>
+                            <li>Suggest and implement design patterns</li>
+                            <li>Prepare technical specifications for the development done</li>
+                            <li>Responsible for the system / functionality (not for the people)</li>
+                            <li>Perform R&D and assist with PoC development</li>
+                        </ul>
+                    </p2>
+                </div>
+
+                <div class="column_30 position_relative" style="margin-left: 3%;">
+                    <div style="width: 100%; text-align: right"><p3><i>Who seeks shall find.</i></p3></div>
+
+                    <br/><br/><br/><br/>
+                    <p2>
+                        <title_3>Daily tasks</title_3>
+                        <ul>
+                            <li>Write program code</li>
+                            <li>Take part in workshop with other developers to come up with the solution</li>
+                            <li>Present ideas for system improvements</li>
+                            <li>Maintain developed systems</li>
+                            <li>Work with business analyst and architect on solution</li>
+                        </ul>
+                    </p2>
+                    <br/><br/>
+                </div>
+
+            </div> <!--Dream position-->
+
+        </div>
+
+        <div class="section_row position_relative top_desc">
+            <div class="column_45 position_relative">
+
+            </div>
+            <div class="column_45 position_relative">
+
+            </div>
+        </div>
+    </div> <!--About me tabs-->
+
+    <!--Projects -->
+    <div id="projects" class="page_auto container borderless position_relative" style="align-items: center;">
+        <div class="column" style="text-align: center">
+            <br/>
+            <!-- <br/> -->
+            <title_1><tc_darkblue> Projects </tc_darkblue></title_1>
+        </div>
+        <br/><br/>
+        
+        <div class="projects-container">
+            <div class="project-row">
+              <div class="project-image-box">
+                <a href="https://furnichanter-web-2-87a4505d69f4.herokuapp.com/" target="_blank" >
+                  <img src="img/Projects/furnichanter/orb-transparent-background-white-orb.png" alt="Furnichanter AI">
+                  <div class="overlay" style="font-size:medium; font-weight:200">Go try search some furniture!</div>
+                </a>
+              </div>
+              <div class="project-description"><p>
+                    Personal project. In this project I experimented with using LLM power and image content processing. It is AI-powered furniture search engine with
+                    <tc_magenta>Gemini</tc_magenta> and <tc_red>NER</tc_red> models to interpret user's intentions and search parameters.
+                    <br/>
+                    Equiped with database of shops (currently only IKEA, but wait there will be more!) and furniture.
+                    The database is filled using web-scrapper, <tc_magenta>LLM</tc_magenta> model that parses description on a shop web catalog page.
+                    After that obtained images are processed through content-based indexing and stored in database in vector representation. During search resulting items are offered with
+                    3 dominant colors obtained from the image which user can choose for similarity search.
+                    <br/><tc_darkblue>React</tc_darkblue> + <tc_blue>NodeJS</tc_blue> is front, <tc_violet>Python Flask</tc_violet> + <tc_violet>PostgreSQL</tc_violet> + <tc_green>OpenCV</tc_green> is in backend. (Click on the orb image to try it!)
+                </p></div>
+            </div>
+
+            <div class="project-row">
+                <div class="project-video-box">
+                    <video width="400" controls autoplay muted loop>
+                      <source src="videos/skymul/gimli_foxglove_interface_demo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <img src="img/Projects/skymul/gimli_layout_ui_test.png" alt="Gimli Outdoor Test" style="max-width: 25vw">
+                </div>
+
+                <div class="project-description"><p>
+                      Another project for SkyMul. I developed a foxglove layout for mobile cart with cobot Fairino in construction worksite. I created convenient launchable desktop icon that initiates all the necessary ROS2 nodes
+                      and bridges. The layout subscribes to robot's GPS position and draws reachable lines it can draw - high/low precision profile. It has canvases with 2D or 3D view and
+                      building schemas and panels layout with the drop down list to select which panel to focus on.
+                      <br/>Additionally the layout has an option of multiple layers of schematics to overlay, zoom function, 1m scale, real-time monitoring of critical ROS topics and ping response time within the network.
+                      <br/>Apart from canvases the layout has robot's status indicator, control buttons that send commands to the robot.
+                      <br/><tc_darkblue>React</tc_darkblue> + <tc_darkblue>TypeScript</tc_darkblue> + <tc_blue>NodeJS</tc_blue>, <tc_green>ROS2</tc_green>.
+                  </p></div>
+            </div>
+
+            <div class="project-row">
+                <div class="project-video-box">
+                    <video width="400" controls autoplay muted loop>
+                      <source src="videos/skymul/manager_report_full_demo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <video width="400" controls autoplay muted loop>
+                        <source src="videos/skymul/manager_report_utils_demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-description"><p>
+                      Another project for SkyMul. I developed a web portal for the client managers to monitor everyday status of the construction work and a set of tools for our internal team ro process
+                      maps, collected data, prepare drone flights and file scan reports.
+                      <br/>Client facing portal:
+                      <br/>- Main page is the overview of the results and tracker of daily progress with the drone scan bird view (3D reconstructed and geo-projected onto location)
+                      <br/>- Second page is the overview of the site and panels pour plan and take off calculator.
+                      <br/>- Third page is an individual panel viewer with schematics overlayed on the actual panel stage scane.
+                      <br/>Stack: Static pages on github pages, <tc_darkblue>React</tc_darkblue> + <tc_blue>NodeJS</tc_blue> is front, <tc_violet>Python Flask</tc_violet> + <tc_violet>PostgreSQL</tc_violet> is in backend.
+                  </p></div>
+            </div>
+
+            <div class="project-row">
+                <div class="project-image-box"  id="project-fiducial-markers">
+                    <img src="img/Projects/skymul/markers/20240423_165700.jpg" alt="Fiduxial markers design">
+                </div>
+                <div class="project-description"><p>
+                    Another project I worked on at SkyMul was 3D reconstruction from motion (Structure-from-Motion). We were flying with drone over client's construction sites
+                    capturing images. I was tasked to design fiducial markers and improve detection and quality of reconstrution. I got to explore current state of technology on circular tags detection approaches
+                    as well as I studied the problem of linear features detection and matching during 3D reconstruction.
+                    <br/><tc_magenta>Python</tc_magenta>, <tc_green>OpenCV</tc_green>, <tc_blue>COCO annotations</tc_blue>, limap, colmap, various edge detections, image processing
+                </p></div>
+            </div>
+
+            <div class="floating-images" id="fiducial-markers-floating-images">
+                <div class="floating-row">
+                    <img src="img/Projects/skymul/markers/20240426_183143.jpg" style="--angle: -5deg; --offset: -20px;">
+                    <img src="img/Projects/skymul/markers/20240423_172644.jpg" style="--angle: 2deg; --offset: 10px;">
+                    <img src="img/Projects/skymul/markers/20240430_163128.jpg" style="--angle: -8deg; --offset: 0;">
+                    <img src="img/Projects/skymul/markers/20240426_184458.jpg" style="--angle: 5deg; --offset: 15px;">
+                </div>
+                <div class="floating-row">
+                    <img src="img/Projects/skymul/markers/cropped_coco_markers.JPG" style="--angle: -4deg; --offset: 5px;">
+                    <img src="img/Projects/skymul/markers/debug_lsd_detected_0.png" style="--angle: 3deg; --offset: -10px;">
+                    <img src="img/Projects/skymul/markers/debug_lsd_detected_1.png" style="--angle: 1deg; --offset: 0;">
+                </div>
+            </div>
+
+            <script>
+                const projectBox = document.getElementById('project-fiducial-markers');
+                const floating = document.getElementById('fiducial-markers-floating-images');
+                
+                projectBox.addEventListener('mouseenter', () => {
+                floating.classList.add('active');
+                });
+                
+                projectBox.addEventListener('mouseleave', () => {
+                floating.classList.remove('active');
+                });
+            </script>
+        
+
+            <!--SkyMul Chotu - rebar tying-->
+            <div class="project-row">
+              <div class="project-image-box">
+                <a href="https://www.youtube.com/watch?v=urHhzivcJ-Q" target="_blank" >
+                    <img src="img/Projects/skymul/chotu.png" alt="SkyMul Dobby">
+                    <div class="overlay" style="font-size:medium; font-weight:200">See our demonstration at the World of Concrete in 2024 on YouTube!</div>
+                </a>
+              </div>
+              <div class="project-description"><p>
+                    While working at SkyMul I got to work on other tasks for locomotion planning on quadrupedal robots. I tuned MPC controller for navigation, fused IMU estimator,
+                    GPS, motion capture OptiTrack localization systems for robot’s different navigation modes.
+                    <br/>I also implemented autonomous navigation with obstacle avoidance using depth camera and manipulation planning quadrupedal robot (customized Unitree Go1).
+                    <br/>I implemented rebars detection for accurate end effector tool alignment for manipulation - you can see how accurate it is in the videos from World of Concrete demostration!
+                    - <tc_darkblue><a href="https://youtube.com/shorts/9lpXm7M96lg?si=BdOy5QX3mO_0zthW">here</a></tc_darkblue>
+                    and <tc_darkblue><a href="https://www.youtube.com/watch?v=urHhzivcJ-Q">here</a></tc_darkblue>
+                    <br/><tc_magenta>Python</tc_magenta>, <tc_green>OpenCV</tc_green> and a lot more, I will tell
+                </p></div>
+            </div>
+
+            <!--MMP-->
+            <div class="project-row">
+                <div class="project-video-box">
+                    <a href="https://arxiv.org/abs/2311.08354" target="_blank">
+                        <img src="img/Projects/mmp/mmp.png" alt="MMP" style="max-width: 22rem">
+                        <video width="400" controls autoplay muted loop>
+                                <source src="videos/skymul/mmp_diagonal_path.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                        </video>
+                    </a>
+                </div>
+                <div class="project-description"><p>
+                      This project I started working on as a student at Georgia Tech at LIDAR Lab and further continued as a robotic engineer at SkyMul.
+                      <br/>My research work at Georgia Tech focused on building robust and kinodynamically-aware footstep planner in the complex envrionment in presence of obstacles.
+                      As part of this work I developed a tree-based algorithm to traverse feasable motions under kinodynamic constraints over the grid of rebars and
+                      accumulating "experience" of reaching an obstacle on the way, concequently learning to avoid it.
+                      <br/> Our manuscript was accepted for ICRA 2024 <tc_darkblue><a href="https://arxiv.org/abs/2311.08354" target="_blank">https://arxiv.org/abs/2311.08354</a> </tc_darkblue>
+                </p></div>
+            </div>
+
+            <!--ECE7850 Turtulebot in the maze-->
+            <div class="project-row">
+                <div class="project-image-box">
+                    <a href="https://youtu.be/8qUE4RuLvf0" target="_blank" >
+                        <img src="img/Projects/ece7850/turtlebot3_ece7850_demo.png" alt="ECE7850 Turtlebot3 in Maze">
+                        <div class="overlay" style="font-size:medium; font-weight:200">Watch a short recording from my final project demo on YouTube!</div>
+                    </a>
+                </div>
+                <div class="project-description"><p>
+                       Academic project. Turtlebot3 explores the maze and navigates using LiDAR and camera to avoid collision, recognize road signs on the wall of the maze and reach the goal by following actions given by the road signs.
+                       <br/><tc_violet>SLAM</tc_violet>, <tc_green>OpenCV</tc_green>, <tc_blue>LiDAR</tc_blue>, <tc_magenta>ROS</tc_magenta>
+                </p></div>
+            </div>
+
+            <!-- ECE6254 The Effect of Hyperparameters on Underspecification in Neural Networks-->
+            <div class="project-row">
+                <div class="project-image-box">
+                    <a href="documents/ECE 6254 The Effect of Hyperparameters on Underspecification in Neural Networks.pdf" target="_blank">
+                        <img src="img/Projects/ece6524/underspecification.png" alt="ECE6254 Hyperparameters on Underspecification in Neural Networks" style="max-width: 22rem; object-fit: contain; margin: auto; background: white">
+                    </a>
+                </div>
+                <div class="project-description"><p>
+                        Academic project. In this project I studdied the effect of regularization on learned internal representations in the two-layer MLP.
+                        <br/>Our project code is available here on git <tc_darkblue><a href="https://github.com/eloygeenjaar/hyperparameters-underspecification.git" target="_blank">https://github.com/eloygeenjaar/hyperparameters-underspecification.git</a> </tc_darkblue>
+                </p></div>
+            </div>
+
+            <!--ECE6563 Networked Control-->
+            <div class="project-row">
+                <div class="project-image-box" style="height: 27rem;">
+                    <a href="https://www.youtube.com/watch?v=ijxJO0N_OGU" target="_blank" style="height: 50%; position: relative; display: block;">
+                        <img src="img/Projects/ece6563/sim.png" alt="ECE6563 Simulation" style="max-width: 24rem">
+                        <div class="overlay" style="font-size:medium; font-weight:200">Simulation in MATLAB</div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=DWjudV1lNic" target="_blank" style="height: 50%; position: relative; display: block;">
+                        <img src="img/Projects/ece6563/robotarium.png" alt="ECE6563 Robotarium" style="max-width: 24rem"/>
+                        <div class="overlay" style="font-size:medium; font-weight:200">Real robotcs in Robotarium</div>
+                    </a>
+                </div>
+                <div class="project-description"><p>
+                       Academic project. Networked Control in Fission–Fusion Societies of Boids
+                       <br/>In this project, I explored networked control dynamics by implementing fission–fusion behavior within the framework of classical Reynolds’ Boids.
+                       I introduced an anomalous agent—a member that, after a certain time, ceased updating its velocity according to the standard networked control rules.
+                       Typically, such an agent naturally emerges as a “leader” of the system, influencing the collective motion of the entire group.
+                       However, when this agent is a malfunctioning robot or is unable to align with the group, the group should avoid taking its reading into account.
+                       <br/>To address this issue, I introduced an additional rule to the standard Reynolds’ conditions, enabling the detection of agents whose behavior deviates
+                       excessively from the group average. Once identified, such anomalous agents are excluded from influencing the system’s dynamics.
+                       <br/>Both in simulation and real-world execution, I observed that this modification preserved system stability and prevented the collective behavior of
+                       the society from converging toward the faulty agent.
+                       <br/>
+                       Implemented in MATLAB and executed on real robots in Robotarium at Georgia Tech.
+                       <br/><tc_red>MATLAB</tc_red>, <tc_violet>Networked Control</tc_violet>, <tc_green>Robotarium</tc_green>, <tc_blue>Reynolds Boids</tc_blue>, <tc_magenta>Fission fusion society</tc_magenta>
+                </p></div>
+            </div>
+          
+            <!--Taurus-->
+            <div class="project-row">
+              <div class="project-image-box">
+                <a href="taurus_showroom.html" target="_blank" >
+                  <img src="img/Projects/Taurus/Bull.png" alt="Image 2">
+                  <div class="overlay"></div>
+                </a>
+              </div>
+              <div class="project-description"><p>
+                    One of my first personal projects with robots. I built a remotely controled robot on wheels with WiFi chip and USB Camera on board (to recognize its owner of cause! hehe).
+                    <br/>As part fo the server/robot communication I wrote a chat using broadcasting protocol, so that any other robots can joint hte conversation and send commands to each other.
+                    <br/>
+                    Raspberry Pi based autonomous robot eager to explore the outside world!
+                    <br/>
+                    <tc_magenta>Raspberry PI</tc_magenta>, <tc_green>OpenCV</tc_green>, <tc_darkblue>Ubuntu Server 64bit</tc_darkblue>
+                </p></div>
+            </div>
+
+            <!--Face Recognition-->
+            <div class="project-row">
+                <div class="project-video-box">
+                    <video width="400" controls autoplay muted loop>
+                        <source src="videos/face_recognition_compressed.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-description"><p>
+                      My very first project with OpenCV and face recognition. I trained it with faces of popular people from google and myself.
+                      <br/>Pardom my potato camera quality, I was a poor student!
+                      <br/>Funny enough my model was confusing me with Musk, it must have been telling me something....
+                      <br/><tc_green>OpenCV</tc_green>, Eigen faces
+                  </p></div>
+            </div>
+          
+            <!--Dragon Curve-->
+            <div class="project-row">
+              <div class="project-image-box">
+                <a href="dragon.html" target="_blank" >
+                  <div class="project_name dragon">DRAGON CURVE</div>
+                  <img src="img/Index/Dragon%20Curve%2017%20p2.png" alt="Image 3">
+                  <div class="overlay" style="font-size:medium; font-weight:200">Let the dragons out!</div>
+                </a>
+              </div>
+              <div class="project-description"><p>
+                Graphical representation of the dragon sequence.<br/>
+                <br/>
+                Implemented with <tc_blue>JavaScript</tc_blue>.<br/><br/>
+                Very primitive.. <br/> Just for fun.. <br/> Because this is my favourite fractal..
+            </p></div>
+            </div>
+        </div>
+        
+    </div> <!-- Projects -->
+
+    <!--Contacts-->
+    <hr class="light borderless" noshade>
+    <div id="contacts" class="page_30 borderless section_row dashed_border" style="background-color: #dbd9ed; text-align: center" >
+            <div class="column_90 position_relative" style="margin-left: 5%; margin-right: 5%; padding: 0">
+                <h2>Contacts</h2>
+                <p2_a><b>Email:</b> &nbsp;jane.ivanova.work (at) gmail.com</p2_a> <br/>
+                <p2_a><b>Phone:</b> &nbsp;+1 4о4 645 84 1з</p2_a> <br/>
+
+                <br/><br/><br/>
+                <p2_a>
+                    I'm excited to hear from you via email or phone. I live in PDT timezone at the moment and open for a call during 2:00 - 6:00 PM.
+                    <br/>
+                    I appreciate if you contact me via email ahead of a call.
+                    <br/>
+                    Thank you!
+                </p2_a>
+            </div>
+    </div>
+
+    <!--<hr class="light borderless" noshade>-->
+
+
+    <div class="section_row">
+        <br/>
+        <div class="column_50" style="padding: 1.7vw;">
+            <bottom_text >Powered by <a href="https://github.com/nucleusfox" style="color: red; text-decoration: none">nucleusfox</a>'s brain.</bottom_text>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,65 @@
+
+
+.image {
+    background: #ffffff;
+    max-height: 80%;
+    max-width: 80%;
+    padding: 0.5em;
+    border-radius: 2px;
+}
+
+.shadow {
+    box-shadow: 0px 3px 7px 3px #191919;
+}
+
+.image_shadow {
+    box-shadow: 0px 0px 10px 2px #2a2a2a;
+}
+
+.logo {
+    max-height: 10vh;
+    max-width: 10vm;
+    padding: 0.3rem;
+    margin: 0.6rem;
+    background: white;
+    border-radius: 2px;
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+    line-height: 150%;
+}
+
+.section_row {
+    min-height: 10px;
+}
+
+hr.light {
+    height:1px;
+    border-width:0;
+    border-bottom: 1px dashed #bccbed;
+    color: #bccbed;
+    background-color: #fff1ea /*#001c33;*/
+}
+
+hr.dark {
+    height:1px;
+    border-width:0;
+    color: #26517b;
+    background-color: #26517b; /*#001c33;*/
+}
+
+.dashed_border {
+    border: 1px dashed #bccbed;
+    color: #bccbed;
+    margin: 0;
+}
+
+
+
+
+
+
+
+

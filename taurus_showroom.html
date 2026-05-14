@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/J%20shadowed%202.png"/>
+    <link rel="stylesheet" href="style_background.css">
+    <link rel="stylesheet" href="style_grid.css">
+    <link rel="stylesheet" href="style_fonts.css">
+    <link rel="stylesheet" href="style_navigation.css">
+    <link rel="stylesheet" href="style_decoration.css">
+    <link rel="stylesheet" href="style_tables.css">
+    <title>ane Ivanova</title>
+</head>
+<body class="borderless" style="max-height: 100vw; max-width:100vw;">
+    <div class="page_auto section_row container">
+        <div class="position_relative" style="margin-left: 3%; margin-right: 3%">
+
+            <div class="container-table100">
+                <div class="wrap-table100">
+                    <div class="table">
+
+                        <div class="row spec_table_section">
+                            <div class="cell">
+                                Description
+                            </div>
+                            <div class="cell">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left; width: 50%">
+                                <p4>&nbsp; &nbsp; Driven by the desire to have a morning coffee cup delivered right to bed by the time the alarm sets off,
+                                    this little delivery bull named Taurus travels around apartment in search of the shortest
+                                    path between the coffee machine and the bed. The problem is that it first requires to learn
+                                    navigational skills, to recognise objects around him and then determine the set of actions:
+                                    reach the first destination with coffee, grab the cup with hot coffee and then deliver
+                                    the package to the second important destination.
+                                    <br/>
+                                    <br/>
+                                    &nbsp; &nbsp; When he grows up Taurus wants to meet other autonomous robots including those with many manipulators
+                                    and cooperate with them to execute more complex tasks like building colonies, music improvisation performances,
+                                    or saving operations in human-free environments (hazardous, anoxic atmosphere of alien planets or cosmic objects, etc.),
+                                    or make friends with drones and together launch to an alien planet in a great discovery journey.
+                                </p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>
+                                    &nbsp; &nbsp; Taurus already can recognise his human friends and knows how to behave under human's control
+                                    but still gets lost in unfamiliar environments. He can't wait to learn how to orient, and navigate
+                                    using his own camera. Longs to get a mechanical manipulator, and secretly wishes all the cups and walls
+                                    in the world had clear borders and NFS marks, but thinks he'll overgrow it someday.
+                                    <br/><br/>
+                                    Taurus's life components:
+                                    <ul>
+                                        <li>Raspberry Pi 4 B+</li>
+                                        <li>Ubuntu Server 64 bit</li>
+                                        <li>OpenCV</li>
+                                        <li>Main Java program running on Raspberry Pi</li>
+                                        <li>WiFi connection</li>
+                                        <li>(Optional) User's remote control program</li>
+                                    </ul>
+                                </p4>
+                            </div>
+                        </div>
+
+                        <div class="row spec_table_section">
+                            <div class="cell">
+                                Some videos with testing
+                            </div>
+                            <div class="cell">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding-top:2vw;text-align: center;">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ef--l_ZKJCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="cell" style="text-align: center; vertical-align: middle;padding:2vw;">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/z0LZ2U8TaEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+
+                        <div class="row spec_table_section">
+                            <div class="cell">
+                                Functional modules
+                            </div>
+                            <div class="cell">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>Core program</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Initialises configurations from file: set of I/O pins and types of manipulators,
+                                    web-services/processes to start at boot. Maintains processes queue -
+                                    received commands, linked to their corresponding execution Java class, and
+                                    launches processing.</p4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>Web-service: message chat</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Chat server. Messages are broadcasted to all connected participants.</p4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>Web-service: remote commands receiver</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Receives commands, links to corresponding Java class with execution logic
+                                    and put them to the execution queue.</p4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>Web-service: remote movement control receiver</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Receives commands to control movement: forward, backward, turn left, turn right.</p4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>Web-service: video streaming</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Streams video by request. Video feed is obtained using library OpenCV and includes
+                                    trained model for face recognition. Per configuration adds face recognition rectangles.</p4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding:2vw;text-align: left;">
+                                <p4>General purpose I/O pins native library</p4>
+                            </div>
+                            <div class="cell" style="text-align: left; vertical-align: middle;padding:2vw;">
+                                <p4>Own native library for I/O pins control, uses Unix's FS as basis. Written on C
+                                    with Java binding.</p4>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-table100">
+                <div class="wrap-table100">
+                    <div class="table">
+                        <div class="row spec_table_section">
+                            <div class="cell" style="width: 100%">
+                                Photo gallery
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="cell" style="padding-top:2vw;text-align: center; display: block;">
+                            <!--<div class="container">-->
+                                <div class="section_row projects_box position_relative">
+                                <img class="gallery" src="img/Projects/Taurus/pics/20200318_204525.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20200318_204538.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20200723_114136.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20201117_211818.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20201220_003552.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20201220_164935.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20201220_165002.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20201220_165012.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20210207_175813.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20210223_213316.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20210401_023745.jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20210419_225647 (1).jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20210419_213904 (1).jpg"/>
+
+
+                                <img class="gallery" src="img/Projects/Taurus/pics/20210419_205245 (1).jpg"/>
+                                <img class="gallery" src="img/Projects/Taurus/pics/20210419_205554 (1).jpg"/>
+
+                                <img class="gallery" src="img/Projects/Taurus/pics/20210405_001741.jpg"/>
+                                <!--<img class="gallery" src="img/Projects/Taurus/pics/20210426_120121.jpg"/>-->
+
+
+                                 <img class="gallery" src="img/Projects/Taurus/pics/20210426_161440.jpg"/>
+                                    <img
+                                        class="gallery" src="img/Projects/Taurus/pics/20210426_164217.jpg"/>
+                                    <img
+                                        class="gallery" src="img/Projects/Taurus/pics/20210426_164353.jpg"/>
+                                    <img
+                                        class="gallery" src="img/Projects/Taurus/pics/IMG_20200311_000948_874.jpg"/>
+                                    <img
+                                        class="gallery" src="img/Projects/Taurus/pics/IMG_20201220_164804_470.jpg"/>
+                                <!--<img class="gallery" src="img/Projects/Taurus/pics/IMG_20210215_224951_183.jpg"/>-->
+                                <!--<img class="gallery" src="img/Projects/Taurus/pics/IMG_20210215_225033_593.jpg"/>-->
+                                    <img
+                                        class="gallery" src="img/Projects/Taurus/pics/IMG_20210419_213809_249.jpg"/></div>
+                            </div>
+                            <!--<div class="cell" style="text-align: center; vertical-align: middle;padding:2vw;">-->
+
+                            <!--</div>-->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--<div class="row spec_table_section" style="width: 100%">-->
+                <!--<div class="cell">-->
+                    <!--Photo gallery-->
+                <!--</div>-->
+                <!--<div class="cell">-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="row">-->
+                <!--<div class="cell" style="padding-top:2vw;text-align: center; display: block;">-->
+                    <!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+                    <!--<div class="section_row projects_box position_relative" style="width: 50%">-->
+                        <!--<img class="gallery" src="img/Projects/Taurus/pics/20200318_204525.jpg"/>-->
+                        <!--<img class="gallery" src="img/Projects/Taurus/pics/20200318_204525.jpg"/>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="cell" style="text-align: center; vertical-align: middle;padding:2vw;">&ndash;&gt;-->
+
+                <!--</div>-->
+            <!--</div>-->
+
+        </div>
+    </div>
+
+    <div class="section_row">
+        <br/>
+        <div class="column_50" style="padding: 1.7vw;">
+            <bottom_text>Powered by <a href="https://github.com/nucleusfox" style="color: red; text-decoration: none">nucleusfox</a>'s brain.</bottom_text>
+        </div>
+    </div>
+</body>
